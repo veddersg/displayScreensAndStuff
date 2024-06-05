@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <metta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+    <link rel=stylesheet href="https://bootswatch.com/5/quartz/bootstrap.css">
+    <link rel=stylesheet href="https://bootswatch.com/_vendor/bootstrap-icons/font/bootstrap-icons.min.css">
+    <link rel=stylesheet href="https://bootswatch.com/_vendor/prismjs/themes/prism-okaidia.css">
+    <link rel="stylesheet" href="https://bootswatch.com/_assets/css/custom.min.css">
+    <link rel="stylesheet" href="./styles2.css">
+
+    <title>Test With the OKTA Dash thing pt 2</title>
+  </head>
+  <body style="padding-top:15px;">
+    <h1 style="padding-left:25px">GVSU OKTA Authentication</h1>
+
+    <div class="row" style="padding:0 25px;">
+      <div class="card col-lg-6" style="padding-bottom:10px;margin: 0 10px;min-height:350px;">
+        <div class="card-header" style="">Top attack locations outside of US</div>
+        <div class="card-body iframe-container" style="">
+          <iframe class="fitted-iframe" src="https://splunk-sh1.server.gvsu.edu:8000/en-US/embed?s=%2FservicesNS%2Fs_winebadd-admin%2Fsearch%2Fsaved%2Fsearches%2Faw_dashboardIG2&oid=Ku6DHNZpqSzZWr72KLLD8LpY8mrokI1Zc6L%5EXU9WKrEN88xHrTTVY27DQUYcZ2ylkdGIvmhaSGjEhMX_CrV8yaVgRHJAQZM0w0yG6yeB6fq4pF2JtpsYqQkFTChkiwRhQjSgWiu9Ux8RZ2tpbBNlaaYlsxiZfxPMblu4D7a"></iframe>
+         </div>
+      </div>
+
+      <div class="card col-sm-4" style="padding: 0 10px 10px 10px;margin:0 10px">
+        <div class="card-header">Locked Accounts</div>
+        <div class="card-body iframe-container">
+          <iframe class="fitted-iframe"
+            src="https://splunk-sh1.server.gvsu.edu:8000/en-US/embed?s=%2FservicesNS%2Fs_gairsonq-admin%2Fsearch%2Fsaved%2Fsearches%2FOkta_Locked_Accounts_Gairson&oid=v%5EkTBHXS59VldKXKFJkRSanogwRJ%5ECiz8oJrYueMNTlqu0hjyUoB%5ENsnRDgSz1Ma%5E03QhcgXbgrz2RutngEpU3ezjXrzeK3giamQVcPJbm03fcyIMhYyoJbAfB9CViUKbQgdtpvoYxAZvU9N9Axrw4iNQpLet%5EfutT0eB4blpIdA2L3ehvL6ZxC5tN"
+            frameborder="0" scrolling="yes" onload="resizeIframe(this)" ></iframe>
+        </div>
+        </div>
+
+      <div class="card col-sm-1" style="padding: 0 10px 10px 10px;margin-left: 0 10px;min-width:250px">
+        <div class="card-header">OKTA total Locked Accounts (last 2hr)</div>
+        <div class="card-body iframe-container">
+          <iframe class="fitted-iframe"
+            src="https://splunk-sh1.server.gvsu.edu:8000/en-US/embed?s=%2FservicesNS%2Fs_gairsonq-admin%2Fsearch%2Fsaved%2Fsearches%2FOkta_Locked_Accounts_Count&oid=w1KRPsOBea0p5_lPAzr8Q2z8Lh7pRdycz7ZvqNEIpJf_LIzlWSXcQWjIQz_47vcDDlzD5UykvNIkxKbIFDyI73cKdJj2jtttehTH15aMhI6W7j4vycqp6FRh2x2vGCpgOakAspnUOl2AXtf50kUxSLiTbqcmgcuvQOFA1wiSsubaNBpMRfFHobaJRo"
+            frameborder="0" scrolling="no" onload="resizeIframe(this)"></iframe>
+        </div>
+      </div>
+    </div>
+    <div class="row" style="padding:15px 25px">
+      <!-- <h1>Bananda</h1> -->
+      <div class="card col-lg-4" style="padding: 0 10px 10px 10px;margin:40px 10px 0 10px;max-height:520px">
+        <div class="card-header">Okta Succesful Logon Attempts</div>
+        <div class="card-body iframe-container">
+          <iframe class="fitted-iframe"
+            src="https://splunk-sh1.server.gvsu.edu:8000/en-US/embed?s=%2FservicesNS%2Fs_winebadd-admin%2Fsearch%2Fsaved%2Fsearches%2FOkta_Success_Lat_Long_ClusterMap%2520Clone&oid=KX_f2_yrCo1mYFuXcGAPjYbiolak8WOn32EIwT1t0YgHfOHPjRtQ7%5EwzUfwfL4w_piWQCyR0cKkvS73pkTNsKD3XzJ4oI6POpZ79GUDKuHwtEQEgbAX4wIOG%5EUlVq1yWYVfe1Wwa2ZwSl1DKvSWdJzmzDoyvbk3PfO3RXxx48MUEzXsSU9fzgANpq%5EbhCVPaj99y0CR"></iframe>
+        </div>
+      </div>
+      <div class="card col-lg-4" style="padding: 0 10px 10px 10px;;margin:40px 10px 0 10px;max-height:520px">
+        <div class="card-header">Okta Failed Logon Attempts</div>
+        <div class="card-body iframe-container">
+          <iframe class="fitted-iframe"
+            src="https://splunk-sh1.server.gvsu.edu:8000/en-US/embed?s=%2FservicesNS%2Fs_winebadd-admin%2Fsearch%2Fsaved%2Fsearches%2FOkta_Failure_Cluster%2520Clone&oid=NaCS2%5Eu5uk9026wwTeUO7YFo2s17pBsMm%5EBOv9sHJCc55MCmxBBPWHlznW8wTE5u8puo92gNpca%5EaIlOO5N95cxQeRTXMn8A_J9rpnISYwhU5nEVmBpFUYPRWfEShcu9_A8DrDZFBAftiub0EhhN8iTECX4QOEckNxwsbm6VDT_udHOO7_x"></iframe>
+        </div>
+    </div>
+    <div class="col-md-3" style="min-width:575px">
+      <div class="card" style="padding:0 10px 10px 10px;margin-bottom:10px;min-height:350px">
+        <div class="card-header">Login authentication</div>
+        <div class="card-body iframe-container">
+          <iframe class="fitted-iframe" src="https://splunk-sh1.server.gvsu.edu:8000/en-US/embed?s=%2FservicesNS%2Fs_gilmanj-admin%2Fsearch%2Fsaved%2Fsearches%2FMFA%2520PIE&oid=q7mA%5E%5EdV_iBbP_CdjeyseQyTmUxLhtPg43Q8KV72nmkpbNKI4yRnj8nD0MCNV20Yavm_zi_K90o0mXf08armOimQ7d1uM2Oiewd7hxTiKz3JM4AuPzqtMDR6M28henC14kZvqd02LURyRS5x_B_fDfrW"></iframe>
+        </div>
+      </div>
+      <div class="card" style="padding:0 10px 10px 10px;min-height:250px">
+        <div class="card-header">Successful Login Attempts Outside U.S.</div>
+        <div class="card-body iframe-container">
+          <iframe class="fitted-iframe" src="https://splunk-sh1.server.gvsu.edu:8000/en-US/embed?s=%2FservicesNS%2Fs_gairsonq-admin%2Fsearch%2Fsaved%2Fsearches%2FOkta%2520Success&oid=HjE3%5EuUEQzUyKp%5EKWWW7Dt5RDQI2AY9fL%5EVj9fucOsEsUuJQ7TKGmgeNl_rWf_j3USMRp86SGJHqVmT08GOojfulcb0cYmGwctY2ugP87fXVLFYhfKMzu5kiBhQAvpmqMxKEmNa6Et8m3Pmyb4D4npbRTqcson8hkKn7G3L"></iframe>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://bootswatch.com/_vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://bootswatch.com/_vendor/prismjs/prism.js" data-manual></script>
+    <script src="https://bootswatch.com/_assets/js/custom.js"></script>
+  </body>
+</html>
