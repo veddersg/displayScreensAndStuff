@@ -1,0 +1,24 @@
+{
+  "name": "displayscreensandstuff",
+  "version": "1.0.0",
+  "description": "This will be a git repo for the various display screens that we'll want to have set up in the SOC at GVSU. It's mostly going to be pertaining to cybersecurity things and stuff... IDK. I don't really know what I want to put in here. So I think that I'm just going to leave this description as it is for now.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adamWinebarger/displayScreensAndStuff.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adamWinebarger/displayScreensAndStuff/issues"
+  },
+  "homepage": "https://github.com/adamWinebarger/displayScreensAndStuff#readme",
+  "dependencies": {
+    "express": "^4.19.2",
+    "http-proxy-middleware": "^2.0.6",
+    "json": "^11.0.0"
+  }
+}

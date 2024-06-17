@@ -6,8 +6,17 @@
   /* height: auto; */
   padding-bottom: 22%; /*Supposedly this gives us 16:9 aspect*/
   overflow: hidden;
-  display: flex;
-  
+  position: relative;
+
+}
+
+.autoscroll-iframe {
+  overflow: hidden;
+  position: absolute;
+  height: 750px;
+  width: 100%;
+  top: 0;
+  left: 0;
 }
 
 .fitted-iframe{
@@ -23,6 +32,7 @@
 
 .card-body {
   margin-top:10px;
+  overflow: hidden;
 }
 
 .report-content {
