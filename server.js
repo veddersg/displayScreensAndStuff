@@ -10,7 +10,7 @@ const app = express();
 app.use(express.static(path.join(__dirname, 'public')))
 
 app.use('/splunk', createProxyMiddleware({
-  target: 'https://splunk-sh1.server.gvsu.edu:8000', // The Splunk server address
+  target: 'https://splunk-sh1.server.gvsu.edu:8000/en-US/', // The Splunk server address
   changeOrigin: true,
   auth: `${jsonData.username}:${jsonData.password}`, // Replace with your Splunk credentials
   pathRewrite: {
