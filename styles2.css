@@ -1,4 +1,19 @@
 
+/* So apparently, we want to go in order of specificity with our CSS rules. So ID's go above classes go above elements */
+
+
+/* element rules */
+
+h1 {
+  padding-left: 25px;
+}
+
+body {
+  padding-top: 15px;
+}
+
+/* class rules */
+
 .iframe-container {
   position: relative;
   width: 100%;
@@ -28,6 +43,16 @@
   border-radius:15px;
 }
 
+/* Ended up not using this rule but thought it might be useful later */
+.col-fifth {
+  width: 20%;
+  float: left;
+}
+
+.card {
+  padding: 0 15px 15px 15px;
+}
+
 .card-body {
   margin-top:10px;
   overflow: hidden;
@@ -36,4 +61,8 @@
 .report-content {
   width: 100%;
   height: auto;
+}
+
+.card-header {
+  margin: 0 -15px;
 }

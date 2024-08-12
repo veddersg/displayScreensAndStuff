@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+    <link rel=stylesheet href="https://bootswatch.com/5/slate/bootstrap.css">
+    <link rel=stylesheet href="https://bootswatch.com/_vendor/bootstrap-icons/font/bootstrap-icons.min.css">
+    <link rel=stylesheet href="https://bootswatch.com/_vendor/prismjs/themes/prism-okaidia.css">
+    <link rel="stylesheet" href="https://bootswatch.com/_assets/css/custom.min.css">
+    <link rel="stylesheet" href="./styles2.css">
+
+    <title>Illumio Events</title>
+
+    <script src="main.js" data-initial-delay="50000"></script>
+  </head>
+  <body style="padding-top:5px;">
+      <h1 style="padding-left:25px;">Illumio Events</h1>
+      <div class="row">
+        <div class="col-lg-6" style="padding-left:25px">
+          <div class="card text-white bg-secondary" style="min-height:330px">
+            <div class="card-header">Timeline of Illumio Events (last 24hr)</div>
+            <div class="card-body iframe-container">
+              <iframe class="fitted-iframe"
+                src="https://splunk-sh1.server.gvsu.edu:8000/en-US/embed?s=%2FservicesNS%2Fs_winebadd-admin%2FIllumioAppforSplunk%2Fsaved%2Fsearches%2FIllumio%2520Auditable%2520Events%2520Timeline&oid=oIg%5EG2mW5sWShmXpeUgltXbu1lU5mijOeb8lLj41bb3sxTnp7J0vJbtkIGkQ4S9daqqXiezvot3kwPqq7rc9Rk6Wt2vvjlSjlJBq38ND03LcJSmE0Q1FUn2lW2G9KeY441DlHXap5AhQCY7PXErtzKWH1ImBQoamfn1ZRSajkXYqNbOZP4NbgToR8nkwNYXzOMvPpgcUu90LvPuh"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6" style="padding-right:15px;margin-left:-5px">
+          <div class="card text-white border-info" style="min-height:330px">
+            <div class="card-header">Illumio Events (last 7 days)</div>
+            <div class="card-body iframe-container">
+              <iframe class="fitted-iframe"
+                src="https://splunk-sh1.server.gvsu.edu:8000/en-US/embed?s=%2FservicesNS%2Fs_winebadd-admin%2FIllumioAppforSplunk%2Fsaved%2Fsearches%2F5%2520day%2520Window%2520of%2520Illumio%2520Events&oid=YjKHXxTeboqFbWlqbq8n4aX7afzydPOlTdzpqyUsgHPxQ%5EqMWmrw_OG%5EXC_lATAgtBe3oDbK89z4f56yds94Tci1IpBLc%5E6m2_gAdzFM9QqsNwCg0t%5Epizuwy0DeWAjd7vrHdsMFM7z4JjqNY30YZHYf1ztyFch_OrckvH9AWX9YmzqVaYw67pXKjz45yiPN1Y4KNnF5wsbf"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div> <!-- End of Row 1 -->
+
+      <div class="row" style="margin-top:10px">
+        <div class="col-lg-6" style="padding-left:25px">
+          <div class="card text-white border-warning" style="min-height:380px">
+            <div class="card-header">Most Trafficked Workloads (Last Hour)</div>
+            <div class="card-body iframe-container">
+              <iframe class="fitted-iframe"
+                src="https://splunk-sh1.server.gvsu.edu:8000/en-US/embed?s=%2FservicesNS%2Fs_winebadd-admin%2FIllumioAppforSplunk%2Fsaved%2Fsearches%2FMost%2520Trafficked%2520Workloads&oid=Q5X6ENoGl23mw7vZBOSG9RxXh5aYoF0BrEvNJBmUDebP7WOTPY7URyPguNizvrgN20Sf4sf6_nLS2ha9MEmv0fiaUMbNtcDptPTHA6c4P7BmutPr%5EBW6dMNF8kazmzlrBMSHHfXIoyLkUTrSdDNCWgutTJluQmn6P6eH42tz63l2Tft4BFw4DY7ym4ydiWg96Azy132WJG7"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6" style="padding-right:15px;margin-left:-5px">
+          <div class="card text-white bg-secondary" style="min-height:380px">
+            <div class="card-header">Most Trafficked Services (Last Hour)</div>
+            <div class="card-body iframe-container">
+              <iframe class="fitted-iframe"
+                src="https://splunk-sh1.server.gvsu.edu:8000/en-US/embed?s=%2FservicesNS%2Fs_winebadd-admin%2FIllumioAppforSplunk%2Fsaved%2Fsearches%2FMost%2520Trafficked%2520Services&oid=%5EKzelR%5Exzf7uCd1IuCjfJooBUGDxggUBtrp8SG444aHaYN0PzGblm6yP7Gn5rCupsLKDOBwFBXQk7T0_w4Fh60NoqKZETsFZx3%5EzWDU1XfM1%5E_w5G0Nb0YPBeuPgxZ5B_2_XxN9cOef3yfVJLUJfbWdtoSs6dAHShKWaQix0LEAXMKCcZSoC8YzAFc7XuirhCNmIJ67b"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div> <!-- End of row 2 -->
+
+      <div class="row">
+        <div class="col-lg-12" style="padding:10px 25px">
+          <div class="card text-white bg-secondary border-danger" style="max-height:265px">
+            <div class="card-header text-center">Traffic Flows (Past 4 hours)</div>
+            <div class="card-body iframe-container" style="max-height:140px">
+              <iframe class="fitted-iframe" style="max-height:200px"
+                src="https://splunk-sh1.server.gvsu.edu:8000/en-US/embed?s=%2FservicesNS%2Fs_winebadd-admin%2FIllumioAppforSplunk%2Fsaved%2Fsearches%2FTraffic%2520Flow&oid=0uqduAkkckq6XPunEjcBP58y8KmC3shLNdm7vgHWe%5EywgWc%5E_jfEUufF540K8yvc7Ra82UrJPMt0StC5nEngjuLKpR0znOQxClLrQnzVuSZI6QUAapJLVg9oIAwHsWAgP3Cxw8_AdFAg2H0KzPKWipDF17jY3dKRHs4h0vDkutZ6gIE6Qv7wx4A"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+  </body>
+</html>

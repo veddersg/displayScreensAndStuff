@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+    <link rel=stylesheet href="https://bootswatch.com/5/sketchy/bootstrap.css">
+    <link rel=stylesheet href="https://bootswatch.com/_vendor/bootstrap-icons/font/bootstrap-icons.min.css">
+    <link rel=stylesheet href="https://bootswatch.com/_vendor/prismjs/themes/prism-okaidia.css">
+    <link rel="stylesheet" href="https://bootswatch.com/_assets/css/custom.min.css">
+    <link rel="stylesheet" href="./styles2.css">
+
+    <title>Honeypot Analytics</title>
+  </head>
+  <body style="padding-top:5px;">
+    <h1 style="padding-left:25px">Honeypot Analytics</h1>
+    <div class="row" style="padding:0 25px;">
+      <div class="col-md-7">
+        <div class="card" style="min-height:340px">
+          <div class="card-header">Honeypot Hits Last 7 Days (log scale)</div>
+          <div class="card-body iframe-container">
+            <iframe class="fitted-iframe"
+              src="https://splunk-sh1.server.gvsu.edu:8000/en-US/embed?s=%2FservicesNS%2Fs_winebadd-admin%2FWCI_TPOT_APP%2Fsaved%2Fsearches%2FHoneypot%2520Log%2520Scale%2520Bar%2520Chart&oid=kX6NyUkl65v%5E%5EOLzYOHP0upXqaPmze6DW4AcY%5EEFLgoWgg9r2T57sreYxkf%5Esj9Nl7Sztx67SJsWd3ekYRjzmgR4jHOkxp5Q%5EvETvifEY6fZ%5Ebt8hUcMNPo_RFtBY_ghaKUX1%5EqvZ6Bx4aghWbvK8iOBdZVEsIYWo2USi_6zOsh40kvLvcMSjlrfOjvVRsR3DbY"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <div class="card" style="min-height:340px">
+          <div class="card-header">Top hits on honeypots by port</div>
+          <div class="card-body iframe-container">
+            <iframe class="fitted-iframe"
+              src="https://splunk-sh1.server.gvsu.edu:8000/en-US/embed?s=%2FservicesNS%2Fs_winebadd-admin%2FWCI_TPOT_APP%2Fsaved%2Fsearches%2FTreemap%2520of%2520Most%2520hit%2520ports%2520on%2520honeypots&oid=iRwQ0vFTIXhdhP5voNuWEJYkQcpBomR3bCfMQ%5Eql7NCK6CrgqSTP%5EMXwyWNE1XhPMwumP8YCYG%5Er4rtvnjMgob1ClwdbYPqObx1UFPp8zUh7WVOsJ_S5%5EmxcCPL2etdf8YySM7K3bEbLRrqFc4EVBxo71OaHXHycddQdFm2azLHu1Ch3JxqzBZ1WsVxJfnSm5GOpM6nPSFPW6C"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div> <!-- end of row 1 -->
+    <div class="row" style="padding:10px 25px">
+      <div class="col-md-8">
+        <div class="card">
+          <div class="card-header">Honeypot Hits Over Time</div>
+          <div class="card-body iframe-container">
+            <iframe class="fitted-iframe"
+              src="https://splunk-sh1.server.gvsu.edu:8000/en-US/embed?s=%2FservicesNS%2Fs_winebadd-admin%2FWCI_TPOT_APP%2Fsaved%2Fsearches%2FHoneypot%2520Time%2520chart%2520of%2520hits.&oid=qOVD5k6Sm0PdNkMyPkYB60hSjXocSLxwYIhl1WKugIPJMec_uO1pmfhV0Z2cYWFF6mmOWEm90AbdCoZODaxu2DLM3SkBamO1mTnCB9ynZS7147kiuOk7fXKbS99go4sHHh%5Ep9EwlWPbAZ4tJy%5E%5EXyvlBCRoaTFGnjfiOFcQXx_MHilL1JF%5EkHjOnNaWswbTjpPWo"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card" style="height:100%">
+          <div class="card-header">Username/Pass combinations used on honeypots</div>
+          <div class="card-body iframe-container">
+            <iframe class="fitted-iframe"
+              src="https://splunk-sh1.server.gvsu.edu:8000/en-US/embed?s=%2FservicesNS%2Fs_winebadd-admin%2FWCI_TPOT_APP%2Fsaved%2Fsearches%2FUsername%25252FPass%2520combos%2520used%2520on%2520the%2520honey%2520pots&oid=d6NXhNlNjpOrurMOx8L0s3MbVksgNgjtb6mW%5E0GfzqRhHP4txprP9QcXnomt5GnvR233b%5EIrptjfUMLllclURfgqC2SwqQDTQII0DyAUX17yLrf5nxiBO2wKFosCt08xPq3eAFylVvIa_kLlAAeI2mAGdjf2iodIoqvKNqWTkVaE0bc7hF1Wmqlw18s5zsekZWQ22DwV4gQpfQ05Kfxe"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div> <!-- End of row 2 -->
+
+    <div class="row" style="padding: 10px 25px;">
+      <div class="col-md-6" style="">
+        <div class="card" style="width:200%;height:55%">
+          <div class="card-header text-center">Hits on various Honeypots (Last 7 days)</div>
+          <div class="card-body iframe-container">
+            <iframe class="fitted-iframe" style="height:48%"
+              src="https://splunk-sh1.server.gvsu.edu:8000/en-US/embed?s=%2FservicesNS%2Fs_winebadd-admin%2FWCI_TPOT_APP%2Fsaved%2Fsearches%2FTrellis%2520of%2520hits%2520on%2520various%2520teapots%2520over%2520time&oid=QI9y9%5Eb%5EoyRjlEv0TZlcp9af6oEwWoiHfxiwkR%5Ebshp_dNt5UtBnYiVMxbUssJYF_Y%5E3q635Yv5_NHbfoebK4gIOc6PixvdHvt1hqZBb_QQrdEEc_034oT5J5rxxhCwz4Qk8kJapZ6374YLXJXvnRIh%5EPu6h%5E4x7MQICq2M5cLB4YLAaxaMozoRVjwsg_eYOUdSlk1MMFDX_wG0m45oiIoCgSC"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <script src="https://bootswatch.com/_vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://bootswatch.com/_vendor/prismjs/prism.js" data-manual></script>
+    <script src="https://bootswatch.com/_assets/js/custom.js"></script>
+    <!-- Organic Scripts -->
+    <script src="main.js"></script>
+  </body>
+</html>

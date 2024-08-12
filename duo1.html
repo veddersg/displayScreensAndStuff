@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+    <link rel=stylesheet href="https://bootswatch.com/5/sketchy/bootstrap.css">
+    <link rel=stylesheet href="https://bootswatch.com/_vendor/bootstrap-icons/font/bootstrap-icons.min.css">
+    <link rel=stylesheet href="https://bootswatch.com/_vendor/prismjs/themes/prism-okaidia.css">
+    <link rel="stylesheet" href="https://bootswatch.com/_assets/css/custom.min.css">
+    <link rel="stylesheet" href="./styles2.css">
+
+    <title>Duo Analytics</title>
+
+    <script src="main.js" data-initial-delay="35000"></script>
+  </head>
+  <body class="">
+    <h1>Duo Analytics or Something</h1>
+    <div class="row" style="padding:0 15px;">
+      <div class="col-lg-7" style="padding-left:15px">
+        <div class="card" style="padding:0 15px;padding-bottom:15px">
+          <div class="card-header" style="margin:0 -15px">Fraudulent Duo Authentication Count By IP</div>
+          <div class="card-body iframe-container">
+            <iframe class="fitted-iframe"
+              src="https://splunk-sh1.server.gvsu.edu:8000/en-US/embed?s=%2FservicesNS%2Fs_winebadd-admin%2Fduo_splunkapp%2Fsaved%2Fsearches%2FFraudulent%2520Duo%2520Authentication%2520Count%2520By%2520IP%2520Bar%2520Chart&oid=9RXJ3eumKycAKWB5tiZVhMPoTjXAlG%5E3pW2Xp9eWuKPZHXrX2heijafYrsz61BWIvFO_uMIR5kE7mgKSCQezAXzetOXPVFif7vPBo6VP6DbjD_TgbfSibl9X94wcOqimUFxcEFF69_29HxwhLdFZiiVVhVw2yYiLBaCMCAwNClmOqX37HNOVHfmDMAf4KOuGPIG34VdZ%5EOcST36MpRSXsqFhHg3t7pjWTN"
+              frameBorder="0" scrolling="no"></iframe>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-2" style="margin-top:-65px">
+        <div class="row" style="margin-left:-5px;">
+          <div class="card"  style="padding: 0 15px; padding-bottom:15px;margin-bottom:15px;">
+            <div class="card-header">New Duo Admin Accounts Created (past 30 days)</div>
+            <div class="card-body iframe-container" style="min-height:95px">
+              <iframe class="fitted-iframe"
+                src="https://splunk-sh1.server.gvsu.edu:8000/en-US/embed?s=%2FservicesNS%2Fs_winebadd-admin%2Fduo_splunkapp%2Fsaved%2Fsearches%2FCount%2520of%2520New%2520Duo%2520Administrator%2520Accounts%2520created&oid=piJhriNThnzxpK7kDttDePcFgqezr9uUf67HhuocxIHUwh3J4RM6W%5EwHVxLSDEny6FZoJPGOANp_Jt2ix61gdvUsSxFM7hUmRKRXHrDMMY0tmYzAmJNoTPDuZvFBVAf%5EaTrMZzC_FgKpQSaX4MB%5E5aiUhumrk%5EMqNw4AZC0gjk8fNMbCeihzoI6H_H5LzlWMKenuuDFSUmsR%5E1%5EpjWwwkTGrjcGuFN"
+                frameBorder="0" scrolling="no"></iframe>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">Duo Locked Account Alert (Past 7 days)</div>
+            <div class="card-body iframe-container" style="min-height:105px">
+              <iframe class="fitted-iframe"
+                src="https://splunk-sh1.server.gvsu.edu:8000/en-US/embed?s=%2FservicesNS%2Fs_winebadd-admin%2Fduo_splunkapp%2Fsaved%2Fsearches%2FDuo%2520Locked%2520Account%2520alerts%2520by%2520count&oid=LgB5swPIyGK48Rl8UZlbtV5NaJitwedqtaPnJhl8_F3szNeYNHN72VytnZG3hNYLOG8RhlJyIKCVucr972UiwtlkWby0Da9Nuzl3C0ug%5EVk3_wRxNxWI3tlnOcxdioauVt23NBh1kTGUY0eX6_MbQxaLNmKkcmAxh_91r2VNHRAq3jZFtHOvCJ0GY_I_YtnWWEy_qor"
+              scrolling="no"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card" style="min-height:295px;">
+          <div class="card-header">Admin Actions Taken (Past 72hr.)</div>
+          <div class="card-body iframe-container">
+            <iframe class="fitted-iframe"
+              src="https://splunk-sh1.server.gvsu.edu:8000/en-US/embed?s=%2FservicesNS%2Fs_winebadd-admin%2Fduo_splunkapp%2Fsaved%2Fsearches%2FDuo%2520Admin%2520Actions%2520Past%25203%2520Days&oid=C2Kmb0wtgx6JiecGGyv525ifkh95FkZDs0pDztQCfZnbGoBcZw6C%5EpCuxSNiBqXZVnlMfrljsfmAxtZL1ZY77HOaGoX2BrapffsQIYlhfYBos7KMUgbWkt_uQKNDab2TnwwRP9zx56fhKbwiAIFmApAnkCfFPgNfe1uT2oWE09h5cOBu%5E4VBHcidN0MNcqeY7HbSRdr"
+              scrolling="no"></iframe>
+          </div>
+        </div>
+      </div>
+    </div> <!-- End of row 1 -->
+    <div class="row" style="padding:15px;">
+      <div class="col-lg-5">
+        <div class="card"style="padding: 0 15px;padding-bottom:15px;min-height:250px">
+          <div class="card-header">Top Duo Auth Failures (Past Week)</div>
+          <div class="card-body iframe-container">
+            <iframe class="fitted-iframe"
+              src="https://splunk-sh1.server.gvsu.edu:8000/en-US/embed?s=%2FservicesNS%2Fs_jameshky-admin%2Fduo_splunkapp%2Fsaved%2Fsearches%2FUsers%2520with%2520Most%2520Failed%2520Duo%2520Login%2520Attempts%2520%2528Past%2520Week%2529&oid=xMORdpBqE%5EZGPezMknv0JWMHWKrA6uYAVcET8OUCwLzdqA%5EIMy1_GuTAIndgbjkOi8rSB5URbXHz3PVyRaIi5WBlRJCK2WOTURsDvGCggi9WuDzQ5jNZUGTA2a2xlJnpnUJ0FEFt30wBUPApxrN5CO6UKYxBwzwMhW%5EIH5jkIV0tijsGxZSWK3033_AyW%5EL0Mi7U_7tcfgDbHEDzdO1qUpO7VSSJWraiAnA"
+             ></iframe>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-7">
+        <div class="card">
+          <div class="card-header">Duo Auth Non-Success Last 7 days</div>
+          <div class="card-body iframe-container">
+            <iframe class="fitted-iframe"
+              src="https://splunk-sh1.server.gvsu.edu:8000/en-US/embed?s=%2FservicesNS%2Fs_winebadd-admin%2Fduo_splunkapp%2Fsaved%2Fsearches%2FLine%2520graph%2520of%2520Duo%2520Non-Success%2520Last%25207%2520Days&oid=xCq8x8wD65LvqV0VT18HmvSWuJVFX6WFAC1R7z3LUXT48yzQanbNqU3yR8bfUtcfWyA5snPtET_kNXIzzGOIpcc7nfqMTqUduMyDNtAEuLGYIfaKu3oSWEd3sDGyb9PD5XKx1WSvQ8ZXnuWzCyiWgVCOeXzRpApT%5EMp90E6XQX7anveKvKODl14HKxRvXWRA51rI9xefurqf3b%5EId%5EVjFF"
+              ></iframe>
+          </div>
+        </div>
+      </div>
+
+    </div> <!-- end of row 2 -->
+
+    <div class="row" style="padding-left:15px;">
+      <div class="col-lg-4">
+        <div class="card" style="padding: 0 15px 15px 15px;min-height:375px;margin-top:-75px">
+          <div class="card-header">Successful Duo authentication Outside US</div>
+          <div class="card-body iframe-container">
+            <iframe class="fitted-iframe"
+              src="https://splunk-sh1.server.gvsu.edu:8000/en-US/embed?s=%2FservicesNS%2Fs_jameshky-admin%2Fduo_splunkapp%2Fsaved%2Fsearches%2FSuccessful%2520Duo%2520Authentications%2520Outside%2520U.S.%2520%2528Past%2520Week%2529&oid=qcVR95HVzzGh78GFJJXCtYQzltEzgcOnQaxnFNM6z3uXmNY6YcBA05CyLZzqui01mBkAfJuqdRZDeGWLQnxI8jAS8%5EeAJJKvXTPlDtrRSsYdbEO0SuO5ATHempwT6i07btA19Een_ZUcyPhBkYJfNQSznCtAobEbIxqw5Zx6NnXOD3cVGYnC2AipTy2t6j8RDHMzG6XBSTfhR4rVFJQ6LxcWClMcIZqzGTuRSo"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-8">
+        <div class="card" style="height:325px">
+          <div class="card-header">Duo Unsuccess Reasons (last 3 days)</div>
+          <div class="card-body iframe-container">
+            <iframe class="fitted-iframe" style="width:100%;max-height:255px;"
+              src="https://splunk-sh1.server.gvsu.edu:8000/en-US/embed?s=%2FservicesNS%2Fs_winebadd-admin%2Fduo_splunkapp%2Fsaved%2Fsearches%2Fline%2520of%2520non-success%25202&oid=NfqwP_r86R7n7WQJgHCz0OFXky_svNHYVuNsBv%5ErYXv5UKvG9Kg9YnFPdDIcvVN84illU2WHVgwSHWQri_tXHUySu0JsPu546fqY8WhPGLZmEyRYYyDOiWt5aZlFV8k8NPjb%5EHIfm2qEtFcgi8zBsJjLXKGwV6HPavpOBxwR514tCM7bHS0zoffW"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div> <!--end of row 3-->
+
+    <script src="https://bootswatch.com/_vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://bootswatch.com/_vendor/prismjs/prism.js" data-manual></script>
+    <script src="https://bootswatch.com/_assets/js/custom.js"></script>
+    <!-- Organic Scripts -->
+  </body>
+</html>

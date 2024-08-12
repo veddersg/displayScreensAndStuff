@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+    <link rel=stylesheet href="https://bootswatch.com/5/slate/bootstrap.css">
+    <link rel=stylesheet href="https://bootswatch.com/_vendor/bootstrap-icons/font/bootstrap-icons.min.css">
+    <link rel=stylesheet href="https://bootswatch.com/_vendor/prismjs/themes/prism-okaidia.css">
+    <link rel="stylesheet" href="https://bootswatch.com/_assets/css/custom.min.css">
+    <link rel="stylesheet" href="./styles2.css">
+
+    <title>Events from High Risk Countries</title>
+
+    <script src="main.js" data-initial-delay="50000"></script>
+  </head>
+  <body style="padding-top:10px">
+    <h1>High Risk Countries Overview</h1>
+    <div class="row" style="padding:0 25px">
+      <div class="col-md-7">
+        <div class="card">
+          <div class="card-header text-white">Threatr traffic from high risk countries (last 5 days)</div>
+          <div class="card-body iframe-container">
+            <iframe class="fitted-iframe"
+              src="https://splunk-sh1.server.gvsu.edu:8000/en-US/embed?s=%2FservicesNS%2Fs_winebadd-admin%2FgvThreatBlockr%2Fsaved%2Fsearches%2FLine%2520Graph%2520of%2520High%2520Risk%2520Countries%2520Sending%2520inbound%2520traffic%2520on%2520threatr&oid=L%5EUzOi_clsl0IthCcHgMfqiercEUXCo9DXDZkyKhdcacaoNrj2tjYDiTBrrUMWh9j4AEWa0JKWugiHV54E8Sc0XwbxN9qiomCacns7qXn%5EK2fvLzNuXKrcfkO6WE9cVZjGLVAHcJhKCtU%5EykoThZfVFjw5%5E_kmrOIRhO0HH8kXwnNR8fa2sw%5EUYw2ILgXiU%5Eazd_V064NAx3NwC5T%5EUJQ09QFoNGBpj4M1n9M_20dEqpIHmz5jHPwlS"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-5" style="padding-left:0;padding-right:0">
+        <div class="card" style="height:100%">
+          <div class="card-header text-white">Traffic from High Risk Countries (GV WWW)</div>
+          <div class="card-body iframe-container">
+            <iframe class="fitted-iframe"
+              src="https://splunk-sh1.server.gvsu.edu:8000/en-US/embed?s=%2FservicesNS%2Fs_winebadd-admin%2Fgvwww%2Fsaved%2Fsearches%2FHeat%2520Map%2520of%2520High%2520Risk%2520Countries&oid=I7_3i9Eb_fxZ9BilfaPX0MGo22yZTLv7B0DB7XnMya8iDGIrget2Cr7a97HJeKhJxay0%5Ep%5E3I3lxU_1_HySM3PbCTaEYZ7wJRmFzbJygdIun84HzI0qb4NWlwE8jaxk%5EEbpZQd0RBJrOpCcDWbGwb%5EAKRRxL7q6yui4BFBMT8OLzEiJ2GFzy1wg50HsHWFhd"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div> <!-- End of row 1 -->
+    <div class="row" style="padding: 10px 25px">
+      <div class="col-md-7">
+        <div class="card">
+          <div class="card-header text-white">Cloudflare Traffic (Last 4hr)</div>
+          <div class="card-body iframe-container">
+            <iframe class="fitted-iframe"
+              src="https://splunk-sh1.server.gvsu.edu:8000/en-US/embed?s=%2FservicesNS%2Fs_winebadd-admin%2Fcloudflare%2Fsaved%2Fsearches%2FBar%2520chart%2520of%2520Cloudflare%2520hits%2520from%2520high%2520risk%2520countries&oid=Vc4gzKgNmkPu8suoPxenKfgKGezQZ97CDNkgNSGQYX89ZqoUCj1nnMN8%5EnWvAJi8MnZmHxir43%5En43RHMqqUu5Eiygk31WlUUOOTsW8wo3KDy3JYtUM2ecGCZJtVMfLHfVl3Gy1YUhhJY0f5c8XVwmhwWb4vmAb8pvGLh5LpnWFrfh1ZzzhN3AK2w0QwBazeRnWhziLEfE0gLopUtEMD0qkR6F88hC"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-5" style="padding-left:0;padding-right:0">
+        <div class="card" style="height:212%;">
+          <div class="card-header text-white">Activity on 0 and 1 nets</div>
+          <div class="card-body iframe-container">
+            <iframe class="fitted-iframe"
+              src="https://splunk-sh1.server.gvsu.edu:8000/en-US/embed?s=%2FservicesNS%2Fs_winebadd-admin%2Fgv_firewall%2Fsaved%2Fsearches%2F0%2520and%25201%2520net%2520firewall%2520activities%2520FDV&oid=xFwTS7G7mwMLrjDYnfxL5NMye3IwWJq6F%5EF0tfWV9LtPs2pRUhJhxcllqFYHKZjMaHwGV2S82dm0VkA6Bs9IajQgcHZKG56tCAEgjgT0OmL8Lf7NfSQ%5EbEP7wMgobTSOlCN89DJnzMwD_4fNwO2vKvSqldZA9FvmmJEIWC9lOECe50IR1q_V39ac1oe8Ec36Vgz9Lur"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div> <!-- End of row 2 -->
+    <div class="row" style="padding:0 25px">
+      <div class="col-md-7">
+        <div class="card" style="height:108%">
+          <div class="card-header text-white">Subnet traffic by country and by allow/deny</div>
+          <div class="card-body iframe-container">
+            <iframe class="fitted-iframe"
+              src="https://splunk-sh1.server.gvsu.edu:8000/en-US/embed?s=%2FservicesNS%2Fs_winebadd-admin%2Fgv_firewall%2Fsaved%2Fsearches%2FFirewall%2520Bar%2520chart%2520of%2520subnets%2520behind%2520firewall%2520by%2520country%2520and%2520by%2520allow%25252Fdeny&oid=MlilOc6JAZGG7mK4%5E4%5EFNWG3yqZ3FkMtGK0L2oWY4IO2mZYtrTuj8ow1pq49qLfEqtbrE5rqs7d%5EpEAxns4o%5EWCzfeAjtMwtsCXDDw0kVly1RilVzzhoXxA5AO8DWonPlirst7_PJimyuWIHR6_3XM6Pg2VXO5WYtnENkgN_ovMZwJlrvF3RwOBTAzdfc5KS8OyunYmqLhmKU2Nnk08iy5jrp%5E5wjcvGJGhXNMO3aWSH1gW2MBkxaeMmSNXtJymgopr"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -4,44 +4,75 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel=stylesheet href="https://bootswatch.com/5/quartz/bootstrap.css">
+    <link rel=stylesheet href="https://bootswatch.com/5/vapor/bootstrap.css">
     <link rel=stylesheet href="https://bootswatch.com/_vendor/bootstrap-icons/font/bootstrap-icons.min.css">
     <link rel=stylesheet href="https://bootswatch.com/_vendor/prismjs/themes/prism-okaidia.css">
     <link rel="stylesheet" href="https://bootswatch.com/_assets/css/custom.min.css">
     <link rel="stylesheet" href="./styles2.css">
-    <script src="main.js"></script>
+    <script src="main.js" data-initial-delay="20000"></script>
     <title>Firewall Analytics</title>
   </head>
   <body style="padding-top:15px;">
 
-    <h1 style="padding-left:25px;">Firewall Analytics</h1>
-    <div class="row" style="padding:0 25px;">
-      <div class="card col-sm-7" style="padding-bottom:10px;margin: 0 10px;">
-        <div class="card-header">Office Firewall Allowed Threats</div>
-        <div class="card-body iframe-container">
-          <iframe class="fitted-iframe iframe.auto-scroll"  frameborder="0"
-             src="https://splunk-sh1.server.gvsu.edu:8000/en-US/embed?s=%2FservicesNS%2Fs_winebadd-admin%2Fsearch%2Fsaved%2Fsearches%2FGV%2520Office%2520Firewall%2520Allowed%2520Threats%2520Modified.&oid=4hFjg9OP8HxMEFQy1rKMM9jO93RhdEyPZYTUGEFTAqzglieTQgH5F9JMvJXamry68YtLtPLTtLPjU8M2uZ22TKBiapevhatsmY93vO2_UejRxj3VLmWQpBfoDIJo%5EbXXTSZYx2UUgd6IOWrmnUJQ7sUL_kSQLobPxD7TvG3Xv8guXhp09Z9EFchzmWzpR%5EZTWjfTuMPwo8R"
-           ></iframe>
+    <h1 style="padding-left:25px;margin: 15px 0;">Firewall Analytics</h1>
+    <div class="row" style="padding:0 15px;">
+      <div class="col-sm-7" style="padding-left:20px">
+        <div class="card" style="padding: 0 15px 15px 15px;height:350px">
+          <div class="card-header bg-info">Office Firewall Allowed Threats</div>
+          <div class="card-body iframe-container">
+            <iframe class="fitted-iframe iframe.auto-scroll"  frameborder="0"
+               src="https://splunk-sh1.server.gvsu.edu:8000/en-US/embed?s=%2FservicesNS%2Fs_winebadd-admin%2Fsearch%2Fsaved%2Fsearches%2FGV%2520Office%2520Firewall%2520Allowed%2520Threats%2520Modified.&oid=4hFjg9OP8HxMEFQy1rKMM9jO93RhdEyPZYTUGEFTAqzglieTQgH5F9JMvJXamry68YtLtPLTtLPjU8M2uZ22TKBiapevhatsmY93vO2_UejRxj3VLmWQpBfoDIJo%5EbXXTSZYx2UUgd6IOWrmnUJQ7sUL_kSQLobPxD7TvG3Xv8guXhp09Z9EFchzmWzpR%5EZTWjfTuMPwo8R"
+             ></iframe>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="row" style="padding:0 25px;margin-top:10px">
-      <div class="card col-sm-6" style="padding-bottom:10px;margin: 0 10px;">
-        <div class="card-header">Possible IP/Port Scan (placeholder)</div>
-        <div class="card-body iframe-container">
-          <iframe class="fitted-iframe autoscroll"
-             src="https://splunk-sh1.server.gvsu.edu:8000/en-US/embed?s=%2FservicesNS%2Fnobody%2FInfoSec_App_for_Splunk%2Fsaved%2Fsearches%2FPossible%2520Port%2520Scan%2520Report&oid=XvAMs3mgURSfuIv%5Etsu_5VclLIERLXxtM2sbSyxOWJ3X0TklML%5EzlOmQ%5E5VdmArhLpf4lOGIugaOBVqEM75qASAyj0KoJBe9c3QEcfzE_N8tH3gDvJ3Kv1muR_TdIcAbP%5Eb0Nu_W8XzS6sJe_W3aQs%5EXaNsCJP%5EFDUG3hnEOfPpJMbRLBqf2xF_JcW_8_eyH61N"
-             width="" height=""></iframe>
+
+      <div class="col-md-5">
+        <div class="card" style="height:350px">
+          <div class="card-header bg-secondary">Allowed Threats (Past 5 Days)</div>
+          <div class="card-body iframe-container">
+            <iframe class="fitted-iframe"
+              src="https://splunk-sh1.server.gvsu.edu:8000/en-US/embed?s=%2FservicesNS%2Fs_winebadd-admin%2Fsearch%2Fsaved%2Fsearches%2FGV%2520Office%2520Firewall%2520Line%2520Graph&oid=DqscI966Fac3_CH5i7XPfyb1v8usDT_pCvYTsmwBZMq5VpmaoGD1LXg0MWspIdn0LWqdzh2TcokxN7nze5cDqLSyxpHkMXr8EnF8dg_hdQnM7H3%5ECynBm1eZpOVr4CtWzFI7y_hspTcj8sN2hl%5ErIXEz9JAgAk7_nI9rLMSPy34rjAn1Kkuwjf_8rGpa7KC"
+            ></iframe>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="row" style="padding:0 25px;margin-top:10px">
-      <div class="card col-lg-6" style="padding-bottom:10px;margin: 0 10px;min-height:300px">
-        <div class="card-header">Brute Force Analytics</div>
-        <div class="card-body iframe-container">
-          <iframe class="fitted-iframe"
-            src="https://splunk-sh1.server.gvsu.edu:8000/en-US/embed?s=%2FservicesNS%2Fnobody%2FInfoSec_App_for_Splunk%2Fsaved%2Fsearches%2FBrute%2520Force%2520Attack%2520Report&oid=KSH6c__snQ4cG9CW0WAAaQ0hDMoC_Gn6quejouvRLvYwepK3Bt%5EvxOE2b0OPb81Juoxhdb_ccC%5EDiZbfVceaXvQDSWZGFCsy_4Jzn5JAZ6PAJiI5QXUlV0QfWBWYCV0KXT3V4HXmDyBZTNMrdvpf8diGp3NUpQHJk8YFTV194pF5Q0kvh2Tc9Fui2qHRLWOf"
-          ></iframe>
+    </div> <!-- End of row 1 -->
+
+    <!-- Putting rows 2 and 3 into a col down here because I want to put a big graphic on the right side -->
+    <div class="row" style="padding-left:15px">
+      <div class="col-lg-6" style="padding-left:15px">
+        <div class="row" style="padding:0 15px;margin-top:10px;">
+            <div class="card" style="padding:0 15px 15px 15px;min-height:320px">
+              <div class="card-header bg-warning text-black">Possible IP/Port Scan (placeholder)</div>
+              <div class="card-body iframe-container">
+                <iframe class="fitted-iframe autoscroll"
+                   src="https://splunk-sh1.server.gvsu.edu:8000/en-US/embed?s=%2FservicesNS%2Fnobody%2FInfoSec_App_for_Splunk%2Fsaved%2Fsearches%2FPossible%2520Port%2520Scan%2520Report&oid=XvAMs3mgURSfuIv%5Etsu_5VclLIERLXxtM2sbSyxOWJ3X0TklML%5EzlOmQ%5E5VdmArhLpf4lOGIugaOBVqEM75qASAyj0KoJBe9c3QEcfzE_N8tH3gDvJ3Kv1muR_TdIcAbP%5Eb0Nu_W8XzS6sJe_W3aQs%5EXaNsCJP%5EFDUG3hnEOfPpJMbRLBqf2xF_JcW_8_eyH61N"
+                   width="" height=""></iframe>
+              </div>
+            </div>
+
+        </div> <!-- End of row 2 -->
+        <div class="row" style="padding:0 15px;margin-top:10px">
+            <div class="card" style="padding: 0 15px 15px 15px">
+              <div class="card-header bg-danger">Brute Force Analytics</div>
+              <div class="card-body iframe-container">
+                <iframe class="fitted-iframe"
+                  src="https://splunk-sh1.server.gvsu.edu:8000/en-US/embed?s=%2FservicesNS%2Fnobody%2FInfoSec_App_for_Splunk%2Fsaved%2Fsearches%2FBrute%2520Force%2520Attack%2520Report&oid=KSH6c__snQ4cG9CW0WAAaQ0hDMoC_Gn6quejouvRLvYwepK3Bt%5EvxOE2b0OPb81Juoxhdb_ccC%5EDiZbfVceaXvQDSWZGFCsy_4Jzn5JAZ6PAJiI5QXUlV0QfWBWYCV0KXT3V4HXmDyBZTNMrdvpf8diGp3NUpQHJk8YFTV194pF5Q0kvh2Tc9Fui2qHRLWOf"
+                ></iframe>
+              </div>
+            </div>
+        </div> <!-- End of row 3 -->
+      </div> <!-- end of our weird bastard column -->
+
+      <div class="col-lg-6" style="margin-left:-10px">
+        <div class="card" style="padding:0 15px 15px 15px;margin-top:10px;margin-left:-5px;height:620px;">
+          <div class="card-header">Firewall Blocked/Dropped (Last 4hr) </div>
+          <div class="card-body iframe-container">
+            <iframe class="fitted-iframe"
+              src="https://splunk-sh1.server.gvsu.edu:8000/en-US/embed?s=%2FservicesNS%2Fs_winebadd-admin%2Fgv_firewall%2Fsaved%2Fsearches%2FFirewall%2520Dropped%25252FBlocked%2520Big&oid=ZHOcaSx5pvhZ1uQuuC9VdYiasDTHbcI0nNR3_pTDlNLbuEyF3feWEGLQgteJFQbcUgMFiTsPVJY8H%5EaZvr_fzSXD2Xe1cNaxB%5EKolBm6K71iEQZO8MunFc%5Ec2ARSAKJ02E2YZj5eeaG8Sv%5E803LHkETcggM5wAosJCgikbCucMKoWy3Juk9nUjcZxXJtLIx"
+              ></iframe>
+          </div>
         </div>
       </div>
     </div>

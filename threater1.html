@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+    <link rel=stylesheet href="https://bootswatch.com/5/morph/bootstrap.css">
+    <link rel=stylesheet href="https://bootswatch.com/_vendor/bootstrap-icons/font/bootstrap-icons.min.css">
+    <link rel=stylesheet href="https://bootswatch.com/_vendor/prismjs/themes/prism-okaidia.css">
+    <link rel="stylesheet" href="https://bootswatch.com/_assets/css/custom.min.css">
+    <link rel="stylesheet" href="./styles2.css">
+
+    <title>Threater Analytics</title>
+
+    <script src="main.js" data-initial-delay="50000"></script>
+  </head>
+  <body style="background-color:#d9eaff;">
+    <h1 style="margin-top:-15px">Threater Analytics</h1>
+    <div class="row">
+      <div class="col-md-6" style="padding-left:50px">
+        <div class="card" style="frameborder:brown;min-height:350px">
+          <div class="card-header">Outbound Traffic (Last 12 hours)</div>
+          <div class="card-body iframe-container">
+            <iframe class="fitted-iframe"
+              src="https://splunk-sh1.server.gvsu.edu:8000/en-US/embed?s=%2FservicesNS%2Fs_winebadd-admin%2FgvThreatBlockr%2Fsaved%2Fsearches%2FOutbound%2520Traffic%2520By%2520Source%25202%2560&oid=aOCIrRQQZu5921SH0G_jlv9QoQVn5q3xwdwf2Hq8Ch0stsSkiDVVDsfFcSu5IVJAEH77iM42Xvlk1PcX2KrzUHIPoL9iEhD_u7lXet_TKVgkjHomtqxWFjMETdU_rZ8fSPJY8XIgLTJ0i9HkPJX7cOy7SIzROrielLO%5ENGBetlVcbwl%5ENivSj59TxxDtcP7HmnwtSuR"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6" style="padding-right:25px;margin-top:-40px">
+        <div class="card" style="frameborder:green;min-height:350px">
+          <div class="card-header">Inbound Traffic (Last 12 Hours)</div>
+          <div class="card-body iframe-container">
+            <iframe class="fitted-iframe"
+              src="https://splunk-sh1.server.gvsu.edu:8000/en-US/embed?s=%2FservicesNS%2Fs_winebadd-admin%2FgvThreatBlockr%2Fsaved%2Fsearches%2FThreater%2520Inbound%2520Traffic%25202&oid=lxs3e_Lx1Xvpj8F5Qg8taTkan81AjxbSHtg0bwXkO2z22p3JCVb38xJrYbw_FZqh40xM7XaoP9VDwoJyPZLguIvU6_M6WE6UETpwJUjctn3oKt7DbTbghZe009vPApox_MyJTsiGcIDDBz35cjDh9bs2FOA2J0huqs9q6QC5qwEAm7BW7eFMXgcovGBySpe2"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div> <!-- End of Row 1 -->
+
+    <div class="row" style="padding-top:15px">
+      <div class="col-md-3" style="padding-left:50px">
+        <div class="card" style="min-height:220px">
+          <div class="card-header">Top Outbound Source IPs</div>
+          <div class="card-body iframe-container">
+            <iframe class="fitted-iframe"
+              src="https://splunk-sh1.server.gvsu.edu:8000/en-US/embed?s=%2FservicesNS%2Fs_winebadd-admin%2FgvThreatBlockr%2Fsaved%2Fsearches%2FThreater%2520Source%2520IP%2527s%2520Pie%2520Chart&oid=O0lZgiDG_Z8nP9ke_XU2i3h%5EeVHfyYe2JGB1XC3SDp1MsRlsykuuIDBcZoxp99pCA%5EwLcf%5E7HmIg%5EfAvoi_SPlXDFuClSSDuR04XUjVphIntMgqGirj2v6%5EWA_EZVlX1RGIR12g0nBhSwfAvNLl2uXR6wu5LVTVoO60oR4G0M2gsVdxGSGwnwUUi8GLuHvhSSd7NQsL"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card" style="min-height:220px">
+          <div class="card-header">Top Outbound Destination IPs</div>
+          <div class="card-body iframe-container">
+            <iframe class="fitted-iframe"
+              src="https://splunk-sh1.server.gvsu.edu:8000/en-US/embed?s=%2FservicesNS%2Fs_winebadd-admin%2FgvThreatBlockr%2Fsaved%2Fsearches%2FTop%2520Outbound%2520Dest%2520IPs%2520Pie%2520Chart&oid=L7Dr3mEvUwGo6j2RvTmZFPVhb2e4KsQSO2SRw108UnQYUFLiPYNozLlk_dhNqRE%5EBMdASD6FgHtY_DgMO%5E6LUDPGAFyYF3XJm2ICD89L6ApdTMYxzsV6FIa6oEVAlMzGAKr95VrxvhaJElJFX_7QYf9LyxBpSAXZYdq5HzNskre_QH86jPNcsGKAN8VBG5KRBG%5E9QhY"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6" style="padding-right:25px">
+        <div class="card" style="margin-top:-35px">
+          <div class="card-header">Top Countries of Origin for Inbound Traffic</div>
+          <div class="card-body iframe-container">
+            <iframe class="fitted-iframe"
+              src="https://splunk-sh1.server.gvsu.edu:8000/en-US/embed?s=%2FservicesNS%2Fs_winebadd-admin%2FgvThreatBlockr%2Fsaved%2Fsearches%2FThreater%2520Top%252010%2520Inbound%2520Countries%2520Bar%2520Chart&oid=rSL3J825sQc7s41HjjUqA718ohFeq70Hn_px0RexWWClwsACxIV997x3Zvly4bTcQh2YAM71GJgr6itamzgsxadD0mfz1HiHE18DoSg7Yd9uO0e1IvWhZolM8eRcFoj%5E5fpxhjbfguSD7aUHwqQfZj0I6EryUVcjcZtxko9x6ie4tgPq7AF0Ly2Ks8HUh_5JFO57AKTnl9X4nB38VMVQA1o"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div> <!-- End of Row 2 -->
+    <div class="row">
+      <div class="col-md-6" style="padding-left:50px">
+        <div class="card" style="margin-top:-25px;min-height:400px">
+          <div class="card-header">Telecomm Origins for Inbound Traffic</div>
+          <div class="card-body iframe-container">
+            <iframe class="fitted-iframe"
+              src="https://splunk-sh1.server.gvsu.edu:8000/en-US/embed?s=%2FservicesNS%2Fs_winebadd-admin%2FgvThreatBlockr%2Fsaved%2Fsearches%2FReport%2520of%2520Telecomm%2520Origins%2520for%2520Inbound%2520Traffic%2520Threater&oid=%5Eg2Ooz%5EjabtfZpo0ummFagkwrPacIb7k4lq8YHyVwVfI8NIfvOaVVhga8XUTeUS2MqzSyVw8%5ESsLdYnht8KB70uvx_L4OV3E3C8baA649dAOmFubOqO_O8eKk7R1ayiPD9Ao5LlyuVaAiTB3pys60VXHNZnB3_79dg8lo7UuQ8YUE4Zc1N9tkB2hLmNCn7higc3rP4VUsinFecG%5EzRFgH86%5EyEp1sa3u0dDcIxx"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3" style="padding-top: 25px; padding-right:5px">
+        <div class="card" style="min-height:350px">
+          <div class="card-header">Top Outbound Threats Today</div>
+          <div class="card-body iframe-container">
+            <iframe class="fitted-iframe"
+              src="https://splunk-sh1.server.gvsu.edu:8000/en-US/embed?s=%2FservicesNS%2Fs_winebadd-admin%2FgvThreatBlockr%2Fsaved%2Fsearches%2FTop%2520Outbound%2520Threat%2520List%2520Category%2520Today&oid=KXEz8Goc1dKHUjre4aYmiSFQkBnK0A1uo2G9SCJcU9NxGzpevTCAhL5UOTKcFvsn4K_hQGJXkH4i73xZbe2u3jtETFBvMhT6kxPHIkOdBgGVl0hlq_R10NGcfnxS754QMR8nYkFCi_TK7TyvFM7u%5EdawAfX0BGXTcvGAdHpwa%5Eb06A7oMvAiz56JUHEbhIyCY85fFJZw4HBcXUZDKQYfEMsR"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3" style="padding-top:25px; padding-right: 25px">
+        <div class="card" style="min-height:350px">
+          <div class="card-header">Top Inbound Threats (Last 4hrs)</div>
+          <div class="card-body iframe-container">
+            <iframe class="fitted-iframe"
+              src="https://splunk-sh1.server.gvsu.edu:8000/en-US/embed?s=%2FservicesNS%2Fs_winebadd-admin%2FgvThreatBlockr%2Fsaved%2Fsearches%2FTop%2520Inbound%2520Threats&oid=RJg0puj1jOPeU1hIcCzwqvVgIcXXKxtsI6sBM2ojkjlpiJu7L3UBN55102RXK7EWEhjLou9GBZCVnbq1JO2IdhhsmPcDRT15MvBb6gn0Mp9m2b_udiXc3UaB3CCYOnJksfm5p4QQbYKz6KG1iRM9GE6xnRLatGXbBYNlD_EIHUxemsvJrzPeHf_3wzX0"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div> <!--End of Row 3-->
+  </body>
+</html>
