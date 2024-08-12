@@ -1,4 +1,3 @@
-
 /* -- Global variables --*/
 
 //As it stands, these are useless variables for the time being. But I didn't feel like
@@ -100,3 +99,4 @@ document.addEventListener('visibilitychange', function() {
 //     //setTimeout(() => autoscroll2(), 2000)
 //     autoscroll2()
 // };
+
