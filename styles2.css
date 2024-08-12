@@ -1,4 +1,18 @@
 
+/* So apparently, we want to go in order of specificity with our CSS rules. So ID's go above classes go above elements */
+
+
+/* element rules */
+
+h1 {
+  padding-left: 25px;
+}
+
+body {
+  padding-top: 15px;
+}
+
+/* class rules */
 
 .iframe-container {
   position: relative;
@@ -6,8 +20,16 @@
   /* height: auto; */
   padding-bottom: 22%; /*Supposedly this gives us 16:9 aspect*/
   overflow: hidden;
-  display: flex;
-  
+
+}
+
+.autoscroll-iframe {
+  overflow: hidden;
+  position: absolute;
+  height: 750px;
+  width: 100%;
+  top: 0;
+  left: 0;
 }
 
 .fitted-iframe{
@@ -21,11 +43,26 @@
   border-radius:15px;
 }
 
+/* Ended up not using this rule but thought it might be useful later */
+.col-fifth {
+  width: 20%;
+  float: left;
+}
+
+.card {
+  padding: 0 15px 15px 15px;
+}
+
 .card-body {
   margin-top:10px;
+  overflow: hidden;
 }
 
 .report-content {
   width: 100%;
   height: auto;
+}
+
+.card-header {
+  margin: 0 -15px;
 }

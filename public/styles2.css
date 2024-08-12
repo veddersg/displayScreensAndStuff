@@ -1,0 +1,41 @@
+
+
+.iframe-container {
+  position: relative;
+  width: 100%;
+  /* height: auto; */
+  padding-bottom: 22%; /*Supposedly this gives us 16:9 aspect*/
+  overflow: hidden;
+  position: relative;
+
+}
+
+.autoscroll-iframe {
+  overflow: hidden;
+  position: absolute;
+  height: 750px;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.fitted-iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  overflow: hidden;
+  border-radius:15px;
+}
+
+.card-body {
+  margin-top:10px;
+  overflow: hidden;
+}
+
+.report-content {
+  width: 100%;
+  height: auto;
+}

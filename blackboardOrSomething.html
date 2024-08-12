@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+    <link rel=stylesheet href="https://bootswatch.com/5/quartz/bootstrap.css">
+    <link rel=stylesheet href="https://bootswatch.com/_vendor/bootstrap-icons/font/bootstrap-icons.min.css">
+    <link rel=stylesheet href="https://bootswatch.com/_vendor/prismjs/themes/prism-okaidia.css">
+    <link rel="stylesheet" href="https://bootswatch.com/_assets/css/custom.min.css">
+    <link rel="stylesheet" href="./styles2.css">
+
+    <title>Blackboard/Student Events or Something</title>
+
+    <script src="main.js" data-initial-delay="50000"></script>
+  </head>
+  <body style="padding-top:5px;">
+    <h1 style="padding-left:25px;">Blackboard/Student Events</h1>
+    <div class="row">
+      <div class="col-lg-5" style="padding-left:25px">
+        <div class="card" style="min-height:350px;margin-top:-10px">
+          <div class="card-header bg-primary">Top BB Emails (Last 30 Days)</div>
+          <div class="card-body iframe-container">
+            <iframe class="fitted-iframe"
+              src="https://splunk-sh1.server.gvsu.edu:8000/en-US/embed?s=%2FservicesNS%2Fs_winebadd-admin%2FBlackBoard%2Fsaved%2Fsearches%2FBB%2520Top%2520Email%2520Addresses%2520%2528Last%252030%2520Day&oid=__f%5ENeao35oOuIxGpQago47984HlJu7dvRv525fUqFNMz5PXeWXSvGiBr5_Rc_7RQmqI1fxXiaz7M8JWcDgRJUsLVQIbB9ICjcPdCKtIp9e_J9pe0jyI8CKzQOba6op2SXoyLsvUApcT%5Eni6xxzdRNresT%5Ekm%5EeLEXT6QssKhwIWQDlGfGJYmWg%5ELBOYS2_x3ec8"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+        <div class="col-lg-5">
+          <div class="card" style="min-height:350px;margin-top:-60px">
+            <div class="card-header bg-success">Time chart of BB events by type</div>
+            <div class="card-body iframe-container">
+              <iframe class="fitted-iframe"
+                src="https://splunk-sh1.server.gvsu.edu:8000/en-US/embed?s=%2FservicesNS%2Fs_winebadd-admin%2Fgvwww%2Fsaved%2Fsearches%2FTimechart%2520of%2520BB%2520Events%2520By%2520Type&oid=uWEyFMZ2I1MBQh9Hx7GXiKCZd7b0che%5EDTk%5EeOWLZCfmd6W%5E_9Jy0tR2grSfqn2VKfxYto2WT9eHyKNYTvBGqh%5EDmiYv%5EmH9VS7VULwAtwPiuZba9vxr0s3K7yjRrti4iwpZRlxUczZkwVFeqHxJ0GPfQFjijMXjq4b2eaTmVd0WvPhVMybqJCkFko"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2" style="padding-right:30px;margin-top:-60px">
+          <div class="row">
+            <div class="card" style="min-height:190px">
+              <div class="card-header">BB Unique Auth Signatures</div>
+              <div class="card-body iframe-container">
+                <iframe class="fitted-iframe"
+                  src="https://splunk-sh1.server.gvsu.edu:8000/en-US/embed?s=%2FservicesNS%2Fs_winebadd-admin%2FBlackBoard%2Fsaved%2Fsearches%2FBB%2520Unique%2520Auth%2520Attempts%25202&oid=_xF50aPFBxNL%5EE33ESWqEZ_1cRFAYBZwq2ZSbWOd2WyIUQpcQ8inzSunyVQQZ7NCvMtj5B6gYFmq5%5EYyEsOfNicG28upfULkoOrnBxess_ZMrhsP7QADl9IVxd7ynpfI0RU5ezcO4b59jOkOEQv15YX2UBWHODUjdtg4yrPyWiWoJSTRi_rtF7zOjZdrQXKg"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="card" style="margin-top:5px;min-height:190px">
+              <div class="card-header">Successful Logins (Last 7 days)</div>
+              <div class="card-body iframe-container">
+                <iframe class="fitted-iframe"
+                  src="https://splunk-sh1.server.gvsu.edu:8000/en-US/embed?s=%2FservicesNS%2Fs_winebadd-admin%2FBlackBoard%2Fsaved%2Fsearches%2FBB%2520Succsessful%2520Login%2520Attempts&oid=HPJCjHO_N0ewN8oYWCud_ka7911rrvW%5EUfVabiU%5E5YcgBmIZ1DhcgIyhPoZ9dDOVdci%5EefOB_7tv%5EgBncgzCU_s62hNXsrlYmuuIc2UjymlqZ%5E_3nsXtpkCqWnMEjLjjXPc%5ENzOh6Px96fO9f12%5ExsDimZg6LA9G3JDJ5VHX3E_TqSTaL2V7LylFXZokFl24"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div> <!-- End of row 1-->
+    <div class="row" style="padding-top:15px;padding-left:25px;margin-top:-00px">
+    <div class="col-lg-5">
+      <div class="card" style="min-height:350px;margin-left:-10px;">
+        <div class="card-header bg-info">Top BB Emails (Last 7 Days)</div>
+        <div class="card-body iframe-container">
+          <iframe class="fitted-iframe"
+            src="https://splunk-sh1.server.gvsu.edu:8000/en-US/embed?s=%2FservicesNS%2Fs_winebadd-admin%2FBlackBoard%2Fsaved%2Fsearches%2FBB%2520Top%2520Email%2520Addresses%2520%2528Last%25207%2520Days%2529&oid=doz2kLknvkYTN8dAxZq2Ifc7%5EqCN9qBWKG9Jpdem9iXQknH0RWemng9RWgJnjd%5EOwRD0ws5iTn2NAN7AONuwbUToQtRJtYvwDE_o9bcC0h%5ESdQgq3pfLA8qj422FU2BXTiMoC76e8KqgbQshMsm5lYeVfspTHOwYlC5YVLgC9gRjjURq0MUcZkoXvSm0D%5EeFKZHY%5E1YPv5o"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+      <div class="col-lg-4">
+        <div class="card" style="min-height:350px;margin-left:-10px;margin-top:-50px;">
+          <div class="card-header">Map of BB Logins (Last hour)</div>
+          <div class="card-body iframe-container">
+            <iframe class="fitted-iframe"
+              src="https://splunk-sh1.server.gvsu.edu:8000/en-US/embed?s=%2FservicesNS%2Fs_winebadd-admin%2FBlackBoard%2Fsaved%2Fsearches%2FSOC%2520BB%2520Location%2520Cluster%2520Map&oid=j5fS4JNgwxs6JRSBYHe13ZJxctPY8Q9y%5EpxT4dIXmv9gkVrwo6DWru0v66U45bxkE%5ECVY7qQyP6qfMSUbPPs_e173iR1%5EQjZwHbyCM7m5TCkBMtmc19_yCoCAngk8BWxXsXD6mjE7%5EQEbKjRmN7g7bMZEVdYNlOXiAKZxDF29s0q9lzzNsSPu7jNtoFOhlbo"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3" style="margin-top:-20px;padding-right:30px">
+        <div class="row">
+          <div class="card">
+            <div class="card-header">BB Login Failures (Last 7 Days)</div>
+            <div class="card-body iframe-container">
+              <iframe class="fitted-iframe"
+                src="https://splunk-sh1.server.gvsu.edu:8000/en-US/embed?s=%2FservicesNS%2Fs_winebadd-admin%2FBlackBoard%2Fsaved%2Fsearches%2FBB%2520Login%2520Failures%25202&oid=2zLjZ9M2Hcksuy5cZ967w6Oor408182lkkEqoFTaSiaTmXzoKMhr1r4n5gQHWQUSmTzAZM0FqOR2KoO0pBj0bCD2EjINp77QvqiCShzo7ICrFqSURJFhyjiC49jlN71eCc0Or1j7mL%5E1A2c9GVagwouf54NdbyB1ByZ77Fqm1M0AnIufYgLyeo"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> <!--end of row 2-->
+    <div class="row" style="padding: 10px 15px">
+      <div class="col-md-5">
+        <div class="card" style="width:101%;height:101%">
+          <div class="card-header">Distinct user logins by IP (last 7 days)</div>
+          <div class="card-body iframe-container">
+            <iframe class="fitted-iframe"
+              src="https://splunk-sh1.server.gvsu.edu:8000/en-US/embed?s=%2FservicesNS%2Fs_winebadd-admin%2FBlackBoard%2Fsaved%2Fsearches%2FBB%2520Barchart%2520of%2520IPs%2520with%2520most%2520unique%2520users&oid=_DeSrn0zFAkROpAnj0mC11RaV770jfzqKoa1dymiNqzTcwrdLzbRucsn8VVQsPAc6n%5Er%5EXoEIPi_zweXK4Wk9Aaj1lBnj_h0qYjzrpLqsntmZ8CFZZ%5E96Afpumd4WW%5EpD38mUkJhPf9G%5EWiE4N3IJn99vvFPmFmWPXKXtBscmo7t1sr%5ESnpB9RlEETnMsTFQE1fPMCm_P8oFMeR"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4" style="padding-left:15px;">
+        <div class="card" style="margin-top:-50px;height:119%;width:102%">
+          <div class="card-header">BB Logins Outside the US</div>
+          <div class="card-body iframe-container">
+            <iframe class="fitted-iframe"
+              src="https://splunk-sh1.server.gvsu.edu:8000/en-US/embed?s=%2FservicesNS%2Fs_winebadd-admin%2FBlackBoard%2Fsaved%2Fsearches%2FMost%2520Hit%2520Countries%2520Outside%2520US%2520Chloropleth%2520Map%25202%2520Clone&oid=7opwRYFtp3LqWSse%5EGrH1ro9U6N8BXe_S61FoQfpdVvCvwGcf8YC6XfPSNrF3DbGl3DXvfAX35n_MSlGMgcrxVleX1vdciX688b13b9b591ntgGOikHQ0G7noMZUx%5EyW44Wsm%5EsGV9dh7v6HBJ27rAf7utUe8mL0BBi8SCTl21WMMAoWaS1N8tD0uQHgcSbMt5qgLKjIjbw6CXarhiUTDdNstQuxWVJz"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card" style="margin-top:-170px;width:102%;min-height:163%">
+          <div class="card-header">Top US Traffic from Outside Michigan</div>
+          <div class="card-body iframe-container">
+            <iframe class="fitted-iframe"
+              src="https://splunk-sh1.server.gvsu.edu:8000/en-US/embed?s=%2FservicesNS%2Fs_winebadd-admin%2FBlackBoard%2Fsaved%2Fsearches%2FBB%2520Bar%2520Chart%2520of%2520Most%2520Traffic%2520Outside%2520of%2520Michigan&oid=4HjffL07cuGQe6HePXshdTQpE2Nh6QL7Uotf_G_LSLSgNow6o61AOUhERlnQns4atfv6E3sz1w4DoXKdeere8eXJzJPA3Pj5Lt6FMfW%5ETw5U7SRwTZ0VegS5e4WZaiJCMXyGopWj3EWafJJZvYUSSPB5o8E4VRa18_Du516Ld7OEl6kdPCvxDPVg7hYomoKop3Fnr8PvfPm9zsoprQNap1ZTTeR"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div> <!-- End of row 3 -->
+  </body>
+</html>

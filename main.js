@@ -1,68 +1,102 @@
-//So this will be our cathall for all the client-side logic
+/* -- Global variables --*/
 
-function splunkReportRequest(id) {
-  var xhr = new XMLHttpRequest();
+//As it stands, these are useless variables for the time being. But I didn't feel like
+// going back and rewrtiing a bunch of things in a bunch of different files
+const reloadInterval = 15000 //This is the interval that sets the refresh interval for the iframe report. It is in milliseconds
 
-  xhr.open('GET', '/serverSide.php?action=generateURL&id='+id, true)
-  xhr.onreadystatechange = function() {
-    if (xhr.readyState === 4 && xhr.status === 200) {
-      //console.log(xhr.responseText)
-      var url = JSON.parse(xhr.responseText)
-      console.log("Banana")
-      console.log(url)
-    }
-  }
-  xhr.send()
-}
+const delayTag = document.querySelector('script[src="main.js"]')
+const initialReloadDelay = delayTag ? parseInt(delayTag.getAttribute('data-initial-delay'), 10) : 0
 
-function fetchIframeData(iframeID) {
-  return new Promise(function(res, rej) {
-    var xhr = new XMLHttpRequest()
+//Let's so numPages will be hard-coded for now but this logic would be what we want to use
+//if we were going to have a variable number of pages and then just change it in the html pages themselves
+// const pageTag = document.querySelcector('script[src="mian.js"]')
+// const numPages = pageTag ? parseInt(pageTag.getAttribute('num-pages'), 10) : 1
+const numPages = 5
 
-    xhr.open('GET', '/serverSide.php?action=generateURL&id='+iframeID, true)
-    xhr.onreadystatechange = function() {
-      if (xhr.readyState === 4 ) {
-        if (xhr.status === 200) {
-          //resolve promise with response data
-          console.log(xhr.responseText)
-          res(JSON.parse(xhr.responseText))
-        } else {
-          rej('Error fettching data for iframe with ID ' + iframeID + " Status: " + xhr.status + " readyState: " + xhr.readyState)
+/* -- Functions --*/
+
+//This is a useless function currently. If we ever get whatever is hosting these pages
+//on the same site as our splunk server, then this might come in handy. But CORS/XSS
+// is going to stop this from functioning properly.
+//
+//Either that or it's the janky CSS one we made... Don't really remember. Mostly just left
+// this in for reference.
+function autoscroll2() {
+    const scrollContainers = document.querySelectorAll('.iframe-container');
+    console.log("autoscroll2 fired");
+
+    scrollContainers.forEach((scrollContainer) => {
+        const iframe = scrollContainer.querySelector('.autoscroll');
+
+        // If we don't find an autoscroll object within an iframe container, then there's no reason to continue with any of this
+        if (!iframe) {
+            console.log("no autoscroll object found. returning");
+            return;
         }
-      }
-    }
-    xhr.send()
-  })
-}
-/*Driver code*/
-//splunkReportRequest('lockedAccountsList1')
-var iframeIDs = []
-var iframes = document.querySelectorAll('iframe')
 
-iframes.forEach(function(iframe) {
-  //check for id
-  if (iframe.id) {
-    iframeIDs.push(iframe.id)
+        let scrollPosition = 0;
+        let scrollDirection = 0.7; // This is actually scroll speed, essentially. Might come back and change the name
+        const minVisibleHeight = 100; // Minimum height of the content that should always be visible
+        const pauseDuration = 2000; // Pause duration in milliseconds
+        const initialDelay = 4000; // Initial delay before auto-scrolling starts
+
+        console.log("Made it to scrollstep");
+
+        function scrollStep() {
+            console.log("Inside scroll step");
+            scrollPosition += scrollDirection;
+            iframe.style.transform = `translateY(-${scrollPosition}px)`; // Well this is an interesting way to do this
+
+            // Case that we've hit the bottom
+            if (scrollPosition >= iframe.scrollHeight - scrollContainer.clientHeight - minVisibleHeight) {
+                scrollDirection = -0.7;
+                console.log('at bottom')
+                setTimeout(() => window.requestAnimationFrame(scrollStep), pauseDuration); // Pause at the bottom
+            } else if (scrollPosition <= 0) { // Case that we're at the top
+                scrollDirection = 0.7;
+                console.log('at top')
+                setTimeout(() => window.requestAnimationFrame(scrollStep), pauseDuration); // Pause at the top
+            } else {
+                console.log('scrolling')
+                window.requestAnimationFrame(scrollStep);
+            }
+        }
+
+        // Start the scrolling after the initial delay
+        setTimeout(() => window.requestAnimationFrame(scrollStep), initialDelay);
+        //scrollStep()
+    });
+}
+
+//Function for automatically reloading reports when they are off screen. I think I might
+// throw a variaable for setting the time interval up towards the top. But if not, it'll be
+// declared in the code here so that should only have to be changed once.
+
+function autoReloadiframes() {
+  const iframes = document.querySelectorAll("iframe")
+
+  iframes.forEach((iframe) => {
+    iframe.src = iframe.src //what the hell?
+  });
+}
+
+/* -- Driver Code --*/
+// setTimeout(() => {
+//   autoReloadiframes() //initial reload
+//   setInterval(autoReloadiframes, reloadInterval * numPages) //Runs autoreload in a given amount of time
+// }, initialReloadDelay)
+
+//So this should be a simplified version of our driver code which will reload the iframes when a tab is clicked away from
+// in theory, I guess
+document.addEventListener('visibilitychange', function() {
+  if (document.visibilityState === 'hidden') {
+    autoReloadiframes()
   }
 })
 
-console.log("iframe IDs: ", iframeIDs)
+//I might've figured out the issue with our extension so I'm just going to comment this out for now -- ignore this for now
+// window.onload = function() {
+//     //setTimeout(() => autoscroll2(), 2000)
+//     autoscroll2()
+// };
 
-iframeIDs.forEach(function(iframeID) {
-  console.log("inside last foreach: ", iframeID)
-  fetchIframeData(iframeID)
-    .then(function(data) {
-      //handle response data
-      console.log("Data: ", data)
-
-      //update the src attrbute of the corresponding iframe
-      var iframe = document.getElementById(iframeID)
-      if (iframe) {
-        iframe.src = data.url
-      }
-    })
-    .catch(function(error) {
-      //Handle errors
-      console.error(error);
-    })
-})
