@@ -55,20 +55,24 @@
     </div>
     <div class="row" style="padding:15px 25px">
       <!-- <h1>Bananda</h1> -->
-      <div class="card col-lg-4" style="margin:40px 10px 0 10px;max-height:520px">
-        <div class="card-header bg-success">Okta Succesful Logon Attempts</div>
-        <div class="card-body iframe-container">
-          <iframe class="fitted-iframe"
-            src="https://splunk-sh1.server.gvsu.edu:8000/en-US/embed?s=%2FservicesNS%2Fs_winebadd-admin%2Fsearch%2Fsaved%2Fsearches%2FOkta_Success_Lat_Long_ClusterMap%2520Clone&oid=KX_f2_yrCo1mYFuXcGAPjYbiolak8WOn32EIwT1t0YgHfOHPjRtQ7%5EwzUfwfL4w_piWQCyR0cKkvS73pkTNsKD3XzJ4oI6POpZ79GUDKuHwtEQEgbAX4wIOG%5EUlVq1yWYVfe1Wwa2ZwSl1DKvSWdJzmzDoyvbk3PfO3RXxx48MUEzXsSU9fzgANpq%5EbhCVPaj99y0CR"></iframe>
+      <div class="col-md-4">
+        <div class="card" style="height:100%">
+          <div class="card-header bg-success">Okta Succesful Logon Attempts</div>
+          <div class="card-body iframe-container">
+            <iframe class="fitted-iframe"
+              src="https://splunk-sh1.server.gvsu.edu:8000/en-US/embed?s=%2FservicesNS%2Fs_winebadd-admin%2Fsearch%2Fsaved%2Fsearches%2FOkta_Success_Lat_Long_ClusterMap%2520Clone&oid=KX_f2_yrCo1mYFuXcGAPjYbiolak8WOn32EIwT1t0YgHfOHPjRtQ7%5EwzUfwfL4w_piWQCyR0cKkvS73pkTNsKD3XzJ4oI6POpZ79GUDKuHwtEQEgbAX4wIOG%5EUlVq1yWYVfe1Wwa2ZwSl1DKvSWdJzmzDoyvbk3PfO3RXxx48MUEzXsSU9fzgANpq%5EbhCVPaj99y0CR"></iframe>
+          </div>
         </div>
       </div>
-      <div class="card col-lg-4" style=";margin:40px 10px 0 10px;max-height:520px">
-        <div class="card-header bg-warning">Okta Failed Logon Attempts</div>
-        <div class="card-body iframe-container">
-          <iframe class="fitted-iframe"
-            src="https://splunk-sh1.server.gvsu.edu:8000/en-US/embed?s=%2FservicesNS%2Fnobody%2Fsearch%2Fsaved%2Fsearches%2FOkta_Failure_Cluster%2520Clone&oid=8TCGrpnmUkR1zP8DJpu2a519oSyYxKf%5EEheBfKX0F7ZVEiwbusm_UxLOMRKfxhkyfp6%5EA7tW9BVRNoKoYTsH076XoBdHNQoeOUcSdI%5E8nmXg3e3JgvpdQMQf0BE6F3IKgTEw8HkVgauKiYjeWK6fFwd6dmSRIhmxIbUFRnzyA6JH"></iframe>
+      <div class="col-md-4" style="padding-left:0px;padding-right:0px">
+        <div class="card" style=";height:100%;">
+          <div class="card-header bg-warning">Okta Failed Logon Attempts</div>
+          <div class="card-body iframe-container">
+            <iframe class="fitted-iframe"
+              src="https://splunk-sh1.server.gvsu.edu:8000/en-US/embed?s=%2FservicesNS%2Fnobody%2Fsearch%2Fsaved%2Fsearches%2FOkta_Failure_Cluster%2520Clone&oid=8TCGrpnmUkR1zP8DJpu2a519oSyYxKf%5EEheBfKX0F7ZVEiwbusm_UxLOMRKfxhkyfp6%5EA7tW9BVRNoKoYTsH076XoBdHNQoeOUcSdI%5E8nmXg3e3JgvpdQMQf0BE6F3IKgTEw8HkVgauKiYjeWK6fFwd6dmSRIhmxIbUFRnzyA6JH"></iframe>
+          </div>
         </div>
-    </div>
+      </div>
     <div class="col-md-3" style="min-width:575px">
       <div class="card" style="margin-bottom:10px;">
         <div class="card-header bg-info">Login authentication</div>
@@ -86,6 +90,7 @@
         </div>
       </div>
     </div>
+  </div>
 
     <script src="https://bootswatch.com/_vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://bootswatch.com/_vendor/prismjs/prism.js" data-manual></script>

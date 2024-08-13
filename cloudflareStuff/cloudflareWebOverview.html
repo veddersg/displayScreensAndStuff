@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+    <link rel=stylesheet href="https://bootswatch.com/5/cyborg/bootstrap.css">
+    <link rel=stylesheet href="https://bootswatch.com/_vendor/bootstrap-icons/font/bootstrap-icons.min.css">
+    <link rel=stylesheet href="https://bootswatch.com/_vendor/prismjs/themes/prism-okaidia.css">
+    <link rel="stylesheet" href="https://bootswatch.com/_assets/css/custom.min.css">
+    <link rel="stylesheet" href="../styles2.css">
+
+    <title>Cloudflare Web Traffic Overview</title>
+
+    <script src="main.js" data-initial-delay="50000"></script>
+  </head>
+  <body style="padding-top:5px;padding-left:15px">
+    <h2>Cloudflare - Snapshot - Web Traffic Overview</h2>
+    <div class="row">
+      <div class="col-lg-7">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card bg-success">
+              <div class="card-header text-black text-center">Total Number of Requests</div>
+              <div class="card-body iframe-container">
+                <iframe class="fitted-iframe"
+                  src="https://splunk-sh1.server.gvsu.edu:8000/en-US/embed?s=%2FservicesNS%2Fs_winebadd-admin%2Fcloudflare%2Fsaved%2Fsearches%2FCloudflare%2520Total%2520Number%2520of%2520Requests%25202&oid=Ye7gGhbbto0QB%5E0Ug0u9SnGMsje0hYgky8%5E5e6gqaT_hghFQWdLbgF5QLISsAxH9jn5XC0d53w_RTvSbXo7tQUwGZm413L2tvixX4Uj3d%5Ekzq7mc1IEjWobA0e5RqwVW5gs_Y8E%5Em1UCRITgNL%5EBzCo6dQORAm1o2LY3qKS8FA5WH7VKVvTo7seOIWxze57Jl%5EO7Ht8%5E1o"
+                ></iframe>
+              </div>
+            </div>
+          </div> <!-- End of first col-md-6 -->
+          <div class="col-md-6" style="margin-left:-10px">
+            <div class="card bg-secondary">
+              <div class="card-header text-white text-center">Total Bandwidth (MB)</div>
+              <div class="card-body iframe-container">
+                <iframe class="fitted-iframe"
+                  src="https://splunk-sh1.server.gvsu.edu:8000/en-US/embed?s=%2FservicesNS%2Fs_winebadd-admin%2Fcloudflare%2Fsaved%2Fsearches%2FCloudflare%2520Total%2520Bandwidth%25202&oid=lbrsskKMH65jt2lZj7sp4Y6Gvz1%5ElJyArRBQ8o_Ruaqt1g3pO76XSefH6FpBfHNG%5Edh4WS5wh7E2MgQEwZ6IpRK3mv_LG4vRvbQdZ6J%5ECn0h29z9sEUMUrNWaSivBg%5E9fLIS8rVUwboGWp8WYAQFwitPdVbMDxkvlV60dC_%5E6ZLJCf0nP3tKCpeGf5R"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div> <!-- End of first inner row -->
+        <div class="row" style="padding-top:10px">
+          <div class="col-md-6">
+            <div class="card bg-light">
+              <div class="card-header text-white text-center">Threats Stopped</div>
+              <div class="card-body iframe-container">
+                <iframe class="fitted-iframe"
+                  src="https://splunk-sh1.server.gvsu.edu:8000/en-US/embed?s=%2FservicesNS%2Fs_winebadd-admin%2Fcloudflare%2Fsaved%2Fsearches%2FThreats%2520Stopped&oid=q12JFAttc9rbeFhNMbzRLD1ojpfCX0%5E6GtL1QtnC8hcK_Jdr0xyZhwfNqycCMru6EZK5pDqhJLFlvRN8O2eudUmF2s5DXcDIs7yF8b9dTeHyGgxrucOJCkYvou6hUasmth%5EjFLJvPjG6Dp3aISBoMkKD9qRgEiMpcaBlZgEdK1oi9IL"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6" style="margin-left:-10px;">
+            <div class="card bg-danger">
+              <div class="card-header text-white text-center">Saved Bandwidth</div>
+              <div class="card-body iframe-container">
+                <iframe class="fitted-iframe"
+                  src="https://splunk-sh1.server.gvsu.edu:8000/en-US/embed?s=%2FservicesNS%2Fs_winebadd-admin%2Fcloudflare%2Fsaved%2Fsearches%2FSaved%2520Bandwidth%25202&oid=a34OEeqCp8x5gy3XnTMIoHjOBpweWXR6aubZZ6DbuNpjJNKXAxVEsrXk9c7fxvcoRJuP2Qo6sROXB_o2_IaCfKNFaUjJO5x4xyctc6e3QPmmJAXjJx0mEKixSiZm0l2hIsSKZ6zBvszcpmewhpzKFG5z94TYphGIymFYQAhRQ731dnMrwo"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-5" style="padding-right:15px;margin-left:-10px;">
+        <div class="card bg-info" style="min-height:246%">
+          <div class="card-header text-black text-center">Top Traffic By Country</div>
+          <div class="card-body iframe-container">
+            <iframe class="fitted-iframe"
+              src="https://splunk-sh1.server.gvsu.edu:8000/en-US/embed?s=%2FservicesNS%2Fs_winebadd-admin%2Fcloudflare%2Fsaved%2Fsearches%2Fcloudflare%2520top%2520traffic%2520by%2520country%25203&oid=9vNbEbJOpNLbjugJWjH%5EC0T8iicQgZ82POAy2sIaH7UjOaePyAXk_KMXwuE4pImyPYrlFQAZbmsRE9SmYJGByHnONNFxzOPjuzkuRGt1uX0HkjyhlrKGHCO8xJbJp3OJbHhJ3ezTTaxa0rk5K1p1skIquMkDp7ae%5Eu8cM9o0WszwvAL5BxC9OpGCuvKd_IcJfqhoW25G3zC"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div> <!--End of outer row 1-->
+    <div class="row" style="padding-top:15px;padding-right:15px">
+      <div class="col-lg-7">
+        <div class="card bg-primary border-secondary" style="min-height:180%">
+          <div class="card-header bg-secondary">Top Traffic Countries Map</div>
+          <div class="card-body iframe-container">
+            <iframe class="fitted-iframe"
+              src="https://splunk-sh1.server.gvsu.edu:8000/en-US/embed?s=%2FservicesNS%2Fs_winebadd-admin%2Fcloudflare%2Fsaved%2Fsearches%2FCloudflare%2520Traffic%2520by%2520Country%2520Map&oid=O45gj%5EFVloZSjD99sl6IoX42xjB9e5ZgeFGr4KtA9_HGoJZzXmEERjY8c1b9H2z%5EbAYKoOBQH98IK%5E7DZLAeQbicY53Jbk9RUd7ChFWfdnGCxT2LJn6zbBmO1sKAwpsXJviVkb1yN77weDQq18GrBzwekp0HdyoI1yep9bZVS2yVNptgbc_FSEQmkxgqSyk0hgdO"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
