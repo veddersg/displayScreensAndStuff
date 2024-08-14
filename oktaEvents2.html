@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
-    <link rel=stylesheet href="https://bootswatch.com/5/quartz/bootstrap.css">
+    <link rel=stylesheet href="https://bootswatch.com/5/darkly/bootstrap.css">
     <link rel=stylesheet href="https://bootswatch.com/_vendor/bootstrap-icons/font/bootstrap-icons.min.css">
     <link rel=stylesheet href="https://bootswatch.com/_vendor/prismjs/themes/prism-okaidia.css">
     <link rel="stylesheet" href="https://bootswatch.com/_assets/css/custom.min.css">
@@ -15,25 +15,61 @@
   </head>
   <body style="padding-top:15px;">
     <h1 style="padding-left:25px">Okta Events</h1>
-    <div class="row" style="padding:0 25px;">
-      <div class="col-lg-2" style="padding:5px;">
-        <div class="card" style="padding: 0 10px 10px 10px;margin:0 10px;min-height:200px">
-          <div class="card-header">Okta High Risk Events</div>
+    <div class="row" style="padding:0 10px;">
+      <div class="col-md-2" style="padding-top:px">
+        <div class="card" style=";height:65%">
+          <div class="card-header bg-success" style="">Okta High Risk Events</div>
           <div class="card-body iframe-container">
             <iframe class="fitted-iframe"
-                src="https://splunk-sh1.server.gvsu.edu:8000/en-US/embed?s=%2FservicesNS%2Fs_winebadd-admin%2Fsearch%2Fsaved%2Fsearches%2FHigh%2520Risk%2520Events%2520Clone&oid=k4nZxCZmRb8lzbzODHjQbq3j3iGb09jvGKsEwCipaQigu2jxYuvpc%5ED6lK0%5EiWKFn7RtvFyQKnCyhffyh48K8l%5Ew5u3BrPMQjakdRGnGXpB%5E%5EPDK1JxnZCBy9bhSe6E3jAh4fSkegTra21HVbXyZr_YPErHFlW6glPR9nJFjHPKrPN" >
+                src="https://splunk-sh1.server.gvsu.edu:8000/en-US/embed?s=%2FservicesNS%2Fnobody%2Flauncher%2Fsaved%2Fsearches%2FHigh%2520Risk%2520Events%2520in%2520the%2520last%25202%2520hours&oid=41P1F28WEbOaZmVRH9GC8NbgB5OF7C4rvus_t%5EzjzyuYmEEpUQ2UGo8QZe5fUlkspP_9SGCWL2ZqXoPixdYETuUaTHbUlwFJAwNhTHCUdpVcnOfBG3S2c1vr48JkwbvIdNY3ZDaXEt7Cazz5pooLXj7nCuMfV99VUiIG_fPiGGXaaoSV_BZti%5EqQucSuPo" >
              </iframe>
           </div>
         </div>
       </div>
-      <div class="card col-md-9" style="padding: 0 10px 10px 10px;margin:0 10px;margin-top:-55px;width:1550px">
-        <div class="card-header">Risk Events by Reason & Alert Level</div>
-        <div class="card-body iframe-container">
-          <iframe class="fitted-iframe"
-              src="https://splunk-sh1.server.gvsu.edu:8000/en-US/embed?s=%2FservicesNS%2Fs_winebadd-admin%2Fsearch%2Fsaved%2Fsearches%2FRisk%2520Events%2520Sorted%2520by%2520Reason%2520and%2520Alert%2520Level&oid=fYY1NtCuBUDGX8df6tdpOUF9PRzxngylHFpeFWU7rXVKVE_Lq2%5ESuhbxN7xgdZC21zUPeNGP8npxHdQztjL9fz7ltxrlU5aT0tj%5E52xbjQ6yk_fCB8nmP3LpGNcsYB8SHDh7wzQ9jEvEh76hvuDRB1BlSsj8_tvywfhfDxsx6zqXjnt662zx6SuMsxPrbz30WuON7ZpYOO9wzwLU5yY"
-            ></iframe>
+      <div class="col-md-10" style="padding-left:0">
+        <div class="card" style="margin-top:-70px;height:95%">
+          <div class="card-header">Risk Events by Reason & Alert Level</div>
+          <div class="card-body iframe-container">
+            <iframe class="fitted-iframe" style="height:75%"
+                src="https://splunk-sh1.server.gvsu.edu:8000/en-US/embed?s=%2FservicesNS%2Fs_winebadd-admin%2Fsearch%2Fsaved%2Fsearches%2FRisk%2520Events%2520Sorted%2520by%2520Reason%2520and%2520Alert%2520Level&oid=fYY1NtCuBUDGX8df6tdpOUF9PRzxngylHFpeFWU7rXVKVE_Lq2%5ESuhbxN7xgdZC21zUPeNGP8npxHdQztjL9fz7ltxrlU5aT0tj%5E52xbjQ6yk_fCB8nmP3LpGNcsYB8SHDh7wzQ9jEvEh76hvuDRB1BlSsj8_tvywfhfDxsx6zqXjnt662zx6SuMsxPrbz30WuON7ZpYOO9wzwLU5yY"
+              ></iframe>
+          </div>
         </div>
       </div>
-    </div>
+    </div> <!-- End of row 1 -->
+    <div class="row" style="padding-top:10px;margin-top:-85px;padding-left:10px; padding-right:10px">
+      <div class="col-md-6">
+        <div class="card" style="height:120%">
+          <div class="card-header">Login denials by org (last 24hrs)</div>
+          <div class="card-body iframe-container">
+            <iframe class="fitted-iframe"
+              src="https://splunk-sh1.server.gvsu.edu:8000/en-US/embed?s=%2FservicesNS%2Fs_winebadd-admin%2Fsearch%2Fsaved%2Fsearches%2FOkta%2520Bar%2520chart%2520of%2520login%2520denials%2520by%2520security%2520context%2520org&oid=WJgDuoqNMGyhZo6ACwDTx6jgWpqkSByXG8HWOi48GgsoRyhptii5D7WkcWKhq8jShFZ%5E8OsM8vpHbn4nGtryLcogfnWS0gsES30oRtMND8Jj6il20jSjmwry%5ELpyn2loWGRRERbtfbFctgAdNje2FSVmIANlqYDA%5EFMTjYSdjtTHjLgcxd%5EnYf1fRYTzNzhFjrXk27FemieZnTgpqHXcHM1Wpo"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6" style="padding-left:10px">
+        <div class="card" style="height:243%">
+          <div class="card-header">Table of Bad ASN logins (last 24 hours)</div>
+          <div class="card-body iframe-container">
+            <iframe class="fitted-iframe"
+              src="https://splunk-sh1.server.gvsu.edu:8000/en-US/embed?s=%2FservicesNS%2Fs_winebadd-admin%2Fsearch%2Fsaved%2Fsearches%2FBad%2520ASN%2520Login%2520Report%25202&oid=_744gJIEQvhjevs_5TRSNza_5wakHbkXEws3F1xK2CDiw54eVEUlNbRR%5EMS3sUXdZYrPCcqRe5QQ_OgV7E%5E1cuP6l_l0xhUAvjwWJqTedmX_Yu%5EFYD3VsYQ5_ZgpAS2gfG89bRv21gV1lySG3dCuZKJd3MscxpQUbI_oDO4Hc035dYOam%5EI1Yir"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div> <!-- End of row 2 -->
+    <div class="row" style="">
+      <div class="col-md-6" style="padding-left:25px;padding-top:70px">
+        <div class="card" style="height:120%">
+          <div class="card-header">Login Denials over time (last 5 days)</div>
+          <div class="card-body iframe-container" style="">
+            <iframe class="fitted-iframe"
+              src="https://splunk-sh1.server.gvsu.edu:8000/en-US/embed?s=%2FservicesNS%2Fs_winebadd-admin%2Fsearch%2Fsaved%2Fsearches%2FGraph%2520of%2520ASN%2520login%2520denials%2520over%2520time&oid=B1Vj05_pxBw2AzyJ86crkyPFNgfx8%5ESxW8IRr2fHA4S1rT2AcwZw1p0UoIli0%5EgEw_3KP8TodAIGIZ0w%5EyH2tcpyeiFkN28N0dBNxc4xKM8Vw1majyHZWeKTh%5EuB54gZapRnp6kOUuoJrSQ8LXcmiRCvIsrGJqNkBuqUAmBpN26gh7NAwN5jQNORhE10IDXm3hHh"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div> <!-- End of row 3 -->
   </body>
 </html>
