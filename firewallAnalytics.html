@@ -32,7 +32,7 @@
       </div>
 
       <div class="col-md-5">
-        <div class="card" style="height:350px">
+        <div class="card" style="height:350px;padding-left:0">
           <div class="card-header bg-secondary">Allowed Threats (Past 5 Days)</div>
           <div class="card-body iframe-container">
             <iframe class="fitted-iframe"
@@ -43,6 +43,50 @@
       </div>
     </div> <!-- End of row 1 -->
 
+    <div class="row" style="padding:15px;margin-top:-5px">
+      <div class="col-md-6" style="padding-left:20px;">
+        <div class="card" style="">
+          <div class="card-header bg-warning text-black">Possible IP/>Port Scans (placeholder?)</div>
+          <div class="card-body iframe-container">
+            <iframe class="fitted-iframe"
+            src="https://splunk-sh1.server.gvsu.edu:8000/en-US/embed?s=%2FservicesNS%2Fnobody%2FInfoSec_App_for_Splunk%2Fsaved%2Fsearches%2FPossible%2520Port%2520Scan%2520Report&oid=XvAMs3mgURSfuIv%5Etsu_5VclLIERLXxtM2sbSyxOWJ3X0TklML%5EzlOmQ%5E5VdmArhLpf4lOGIugaOBVqEM75qASAyj0KoJBe9c3QEcfzE_N8tH3gDvJ3Kv1muR_TdIcAbP%5Eb0Nu_W8XzS6sJe_W3aQs%5EXaNsCJP%5EFDUG3hnEOfPpJMbRLBqf2xF_JcW_8_eyH61N"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card" style="height:100%;padding-left:0">
+          <div class="card-header">Firewall Blocked/Dropped (last 4hr)</div>
+          <div class="card-body iframe-container">
+            <iframe class="fitted-iframe"
+              src="https://splunk-sh1.server.gvsu.edu:8000/en-US/embed?s=%2FservicesNS%2Fs_winebadd-admin%2Fgv_firewall%2Fsaved%2Fsearches%2FFirewall%2520Dropped%25252FBlocked%2520Big&oid=ZHOcaSx5pvhZ1uQuuC9VdYiasDTHbcI0nNR3_pTDlNLbuEyF3feWEGLQgteJFQbcUgMFiTsPVJY8H%5EaZvr_fzSXD2Xe1cNaxB%5EKolBm6K71iEQZO8MunFc%5Ec2ARSAKJ02E2YZj5eeaG8Sv%5E803LHkETcggM5wAosJCgikbCucMKoWy3Juk9nUjcZxXJtLIx"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div> <!-- End of row 2 -->
+    <div class="row" style="padding: 0 15px;margin-top:-10px">
+      <div class="col-md-7" style="padding-left:20px">
+        <div class="card">
+          <div class="card-header">Top attack locations outside of US</div>
+          <div class="card-body iframe-container">
+            <iframe class="fitted-iframe"
+              src="https://splunk-sh1.server.gvsu.edu:8000/en-US/embed?s=%2FservicesNS%2Fs_winebadd-admin%2Fsearch%2Fsaved%2Fsearches%2FTop%252013%2520Foreign%2520Attack%2520Locations%2520V2&oid=pHNHvLB7Z1XhA0gevk3icNQrPwq8pujUpNpzLUHhGgTLupNYi9xg5sko53vU5Oj4ytzKIwCV3YQLcIgjjGwyE98lbZm4qIlRAOR0ivoZeYH45__1DdEv4xzZbuQkq4PZ0tgkN2sVZ7bLqHlVQZ66KP04_m9slii6w1DUbvKKxd15NOeeNcc9o7HbQZYFcC"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <div class="card" style="height:100%">
+          <div class="card-header bg-danger">Brute Force Analytics</div>
+          <div class="card-body iframe-container">
+            <iframe class="fitted-iframe"
+              src="https://splunk-sh1.server.gvsu.edu:8000/en-US/embed?s=%2FservicesNS%2Fnobody%2FInfoSec_App_for_Splunk%2Fsaved%2Fsearches%2FBrute%2520Force%2520Attack%2520Report&oid=KSH6c__snQ4cG9CW0WAAaQ0hDMoC_Gn6quejouvRLvYwepK3Bt%5EvxOE2b0OPb81Juoxhdb_ccC%5EDiZbfVceaXvQDSWZGFCsy_4Jzn5JAZ6PAJiI5QXUlV0QfWBWYCV0KXT3V4HXmDyBZTNMrdvpf8diGp3NUpQHJk8YFTV194pF5Q0kvh2Tc9Fui2qHRLWOf"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div> <!-- end of row 3 -->
     <!-- Putting rows 2 and 3 into a col down here because I want to put a big graphic on the right side -->
     <div class="row" style="padding-left:15px">
       <div class="col-lg-6" style="padding-left:15px">
@@ -70,7 +114,7 @@
       </div> <!-- end of our weird bastard column -->
 
       <div class="col-lg-6" style="margin-left:-10px">
-        <div class="card" style="padding:0 15px 15px 15px;margin-top:10px;margin-left:-5px;height:620px;">
+        <div class="card" style="padding:0 15px 15px 15px;margin-top:10px;margin-left:-5px;height:100%">
           <div class="card-header">Firewall Blocked/Dropped (Last 4hr) </div>
           <div class="card-body iframe-container">
             <iframe class="fitted-iframe"
